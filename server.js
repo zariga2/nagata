@@ -8,11 +8,15 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res, next) {
-  return res.render("top");
+    return res.render("top");
 });
 
 app.get("/test", function(req, res, next) {
-  return res.render("test");
+    return res.render("test");
+});
+
+app.get("/test1", function(req, res, next) {
+    return res.render("test");
 });
 
 let server = http.createServer(app);
