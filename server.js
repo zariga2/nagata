@@ -8,14 +8,18 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res, next) {
-  return res.render("top");
+    return res.render("top");
 });
 
 app.get("/nagata", function(req, res, next) {
-  return res.render("top");
+    return res.render("top");
 });
 
 app.get("/eto", function(req, res, next) {
+    return res.render("top");
+});
+
+app.get("/shun", function(req, res, next) {
     return res.render("top");
 });
 
