@@ -16,7 +16,11 @@ app.get("/nagata", function(req, res, next) {
 });
 
 app.get("/eto", function(req, res, next) {
-    return res.render("top");
+  return res.render("top");
+});
+
+app.get("/ikunobu", function(req, res, next) {
+  return res.render("top");
 });
 
 app.get("/shun", function(req, res, next) {
