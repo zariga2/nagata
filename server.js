@@ -8,7 +8,11 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res, next) {
-    return res.render("top");
+  return res.render("top");
+});
+
+app.get("/nagata", function(req, res, next) {
+  return res.render("top");
 });
 
 let server = http.createServer(app);
