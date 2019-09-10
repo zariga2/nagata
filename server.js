@@ -11,14 +11,6 @@ app.get("/", function(req, res, next) {
     return res.render("top");
 });
 
-app.get("/test", function(req, res, next) {
-    return res.render("test");
-});
-
-app.get("/testtest", function(req, res, next) {
-    return res.render("test");
-});
-
 let server = http.createServer(app);
 server.listen("3000");
 console.log("サーバーを起動しました");
