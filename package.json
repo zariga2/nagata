@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zariga2/nagata/issues"
   },
-  "homepage": "https://github.com/zariga2/nagata#readme"
+  "homepage": "https://github.com/zariga2/nagata#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
