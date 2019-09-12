@@ -5,12 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
- .navbar-brand {
-  background: url("/nagata/public/images/header/logo.png") no-repeat left center;
-  background-size: contain;
-  height: 50px;
-  width: 250px;
-}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
