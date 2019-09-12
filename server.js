@@ -8,14 +8,13 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public/"));
 
+/*** ========== ルーティング ==========
+// * ============================================ */
 let top = require("./routes/top");
 app.use("/top", top);
 
 app.get("/", function(req, res, next) {
-  return res.render("top");
-});
-app.get("/header", function(req, res, next) {
-  return res.render("header");
+  res.render("header.ejs");
 });
 
 let server = http.createServer(app);
