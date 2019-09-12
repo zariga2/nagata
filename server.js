@@ -14,7 +14,7 @@ let top = require("./routes/top");
 app.use("/top", top);
 
 app.get("/", function(req, res, next) {
-  res.render("header.ejs");
+    res.render("_footer.ejs");
 });
 
 let server = http.createServer(app);
