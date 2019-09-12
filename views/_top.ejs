@@ -5,6 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
+        <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="./lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet/less" href="./src/less/_top.less" />
     </head>
-    <body></body>
+    <body>
+        <!-- === header === -->
+        <%- include('./_header') %>
+
+        <!-- === footer === -->
+        <%- include('./_footer') %>
+
+        <script src="./lib/less/less.min.js"></script>
+    </body>
 </html>
