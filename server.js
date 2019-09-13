@@ -10,12 +10,11 @@ app.use(express.static(__dirname + "/public/"));
 
 /*** ========== ルーティング ==========
 // * ============================================ */
-let top = require("./routes/top");
-app.use("/top", top);
+let top = require("./routes/_top");
+app.use("/", top);
 
-app.get("/", function(req, res, next) {
-    res.render("_top.ejs");
-});
+let order = require("./routes/order/_order.js");
+app.use("/order", order);
 
 let server = http.createServer(app);
 server.listen("3000");
