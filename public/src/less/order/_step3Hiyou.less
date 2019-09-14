@@ -1,0 +1,68 @@
+@import "../common.less";
+
+main {
+    font-size: @base-fontsize;
+    padding: 0 10%;
+
+    /* === mainContents === */
+    .mainContents {
+        margin: 30px 0;
+
+        /* === leftSide === */
+        .leftSide {
+            .container {
+                margin-bottom: 15px;
+            }
+        }
+
+        /* === rightSide === */
+        .rightSide {
+            padding: 0;
+            border: solid 1px rgb(225, 225, 225);
+            border-radius: 3px;
+
+            .title {
+                background-color: rgba(202, 202, 202, 0.541);
+                text-align: center;
+                border-radius: 3px 3px 0 0;
+                font-weight: bold;
+            }
+
+            .detail {
+                padding: 10px 20px;
+                p {
+                    margin-bottom: 0;
+                }
+
+                .result {
+                    text-align: right;
+                }
+            }
+        }
+
+        /* === submitButton === */
+        .submitButton {
+            padding: 30px 0;
+            text-align: center;
+
+            button {
+                padding: 0 10px;
+                background-color: rgb(15, 123, 209);
+                border: solid 1px rgb(225, 225, 225);
+                border-radius: 4px;
+                color: white;
+                padding: 5px 30px;
+                font-size: @base-fontsize * 1.4;
+            }
+        }
+
+        .notice {
+            display: inline-block;
+            list-style: disc;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+            font-size: @base-fontsize * 0.8;
+        }
+    }
+}
