@@ -9,6 +9,7 @@ main {
 
         /* === leftSide === */
         .leftSide {
+            padding-left: 10%;
             /* === content === */
             .content {
                 padding: 20px;
@@ -29,10 +30,10 @@ main {
 
                         .imageContent {
                             display: inline-block;
-                            min-width: 120px;
+                            min-width: 30%;
                             min-height: 100px;
                             margin: 0 20px;
-                            border: solid 1px rgb(156, 156, 156);
+                            border: solid 1px rgb(225, 225, 225);
                             border-radius: 3px;
 
                             img {
@@ -44,23 +45,25 @@ main {
                     }
 
                     .radioLists {
-                        padding: 0 0 0 20px;
                         position: relative;
 
                         .radioList {
-                            margin: 20px 0;
-
-                            input {
+                            label {
+                                display: block;
                                 position: relative;
-                                top: 50%;
-                                transform: translate(0, -50%);
-                                margin-right: 10px;
+                                padding-left: 1em;
                             }
 
-                            div {
-                                display: inline-block;
-                                overflow-wrap: break-word;
-                                max-width: 90%;
+                            label input {
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                margin: auto;
+                            }
+
+                            p {
+                                margin-left: 15px;
                             }
                         }
                     }
@@ -83,8 +86,10 @@ main {
                     }
 
                     textarea {
-                        width: 85%;
+                        width: 95%;
                         padding: 10px;
+                        border: solid 1px rgb(225, 225, 225);
+                        border-radius: 3px;
                     }
                 }
             }
