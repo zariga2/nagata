@@ -13,7 +13,7 @@ app.use(express.static(__dirname + "/public/"));
 let top = require("./routes/_top");
 app.use("/", top);
 
-let order = require("./routes/order/_order.js");
+let order = require("./routes/_order.js");
 app.use("/order", order);
 
 let server = http.createServer(app);
