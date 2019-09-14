@@ -9,10 +9,85 @@ main {
 
         /* === leftSide === */
         .leftSide {
+            margin-bottom: 30px;
+            padding: 0 10%;
+
+            .title {
+                color: black;
+                font-weight: bold;
+            }
+            .row {
+                margin: 10px 0;
+                input {
+                    width: 100%;
+                    border: solid 1px rgb(225, 225, 225);
+                    padding: 0 10px;
+                }
+                select {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
 
         /* === rightSide === */
         .rightSide {
+            padding: 0 10%;
+
+            .title {
+                color: black;
+                font-weight: bold;
+            }
+
+            .radioLists {
+                position: relative;
+
+                .radioList {
+                    margin: 10px 0;
+
+                    label {
+                        display: block;
+                        position: relative;
+                        padding-left: 1em;
+                        margin-bottom: 0;
+
+                        input {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            margin: auto;
+                        }
+
+                        p {
+                            margin-left: 15px;
+                            margin-bottom: 0;
+                            color: black;
+                            font-weight: bold;
+                        }
+                    }
+
+                    div {
+                        padding-left: 10px;
+                        font-size: @base-fontsize * 0.9;
+                    }
+                }
+            }
+        }
+
+        .submitButton {
+            padding: 30px 0;
+            text-align: center;
+
+            button {
+                padding: 0 10px;
+                background-color: rgb(15, 123, 209);
+                border: solid 1px rgb(225, 225, 225);
+                border-radius: 4px;
+                color: white;
+                padding: 5px 30px;
+                font-size: @base-fontsize * 1.4;
+            }
         }
     }
 }

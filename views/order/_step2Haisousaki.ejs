@@ -30,12 +30,161 @@
             <div class="mainContents">
                 <div class="container">
                     <div class="row">
+                        <div class="col-lg-2 leftSide"></div>
+
                         <!-- === leftSide === -->
-                        <div class="col-md-6 leftSide"></div>
+                        <div class="col-lg-4 leftSide">
+                            <div class="title">配送先を入力</div>
+                            <div class="container">
+                                <!-- === 性・名 === -->
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="性" />
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" placeholder="名" />
+                                    </div>
+                                </div>
+                                <!-- === セイ・メイ === -->
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="セイ" />
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" placeholder="メイ" />
+                                    </div>
+                                </div>
+                                <!-- === 市街局番・電話番号 === -->
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input
+                                            type="text"
+                                            placeholder="市街局番"
+                                        />
+                                    </div>
+                                    <div class="col-7">
+                                        <input
+                                            type="text"
+                                            placeholder="電話番号（例：12345678）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 郵便番号 === -->
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input
+                                            type="text"
+                                            placeholder="〒（123-4567）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 住所（都道府県） === -->
+                                <div class="row">
+                                    <div class="col-4">
+                                        <select name="" id="">
+                                            <option value="東京都"
+                                                >東京都</option
+                                            >
+                                        </select>
+                                    </div>
+                                    <div class="col-8">
+                                        <input
+                                            type="text"
+                                            placeholder="市区町村（11文字以内）（例）新宿区"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 番地 === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="番地など（17文字以内）（例）西新宿3-20-2"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 建物名 === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="建物名など（オプション）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 会社名 === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="会社名（オプション）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 携帯電話番号 === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="携帯電話番号（オプション）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === メール === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="E-MAIL"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- === rightSide === -->
-                        <div class="col-md-6 rightSide"></div>
+                        <div class="col-lg-4 rightSide">
+                            <div class="title">支払い方法を選択</div>
+                            <div class="radioLists">
+                                <!-- === 現金振り込み === -->
+                                <div class="radioList">
+                                    <label for="radioList1">
+                                        <input
+                                            type="radio"
+                                            name="radioList"
+                                            id="radioList1"
+                                        />
+                                        <p>
+                                            現行振込
+                                        </p>
+                                    </label>
+                                    <div>
+                                        提携銀行へ送金可能な日本全国の銀行、ATMからお振込みいただけます。<br />
+                                        （振込手数料はお客様負担となります。海外からの送金不可）
+                                    </div>
+                                </div>
+                                <!-- === クレジットカード === -->
+                                <div class="radioList">
+                                    <label for="radioList2">
+                                        <input
+                                            type="radio"
+                                            name="radioList"
+                                            id="radioList2"
+                                        />
+                                        <p>
+                                            クレジットカード
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 leftSide"></div>
                     </div>
+                </div>
+
+                <div class="submitButton">
+                    <button>注文内容の確認</button>
                 </div>
             </div>
         </main>
