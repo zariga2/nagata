@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- === less === -->
+        <link
+            rel="stylesheet/less"
+            href="/src/less/order/_step2Haisousaki.less"
+        />
+    </head>
+    <body>
+        <!-- === header === -->
+        <%- include('../header') %>
+
+        <main>
+            <!-- === mainFirstHeader === -->
+            <%- include('./main1FirstHeader.ejs') %>
+
+            <!-- === mainSecondHeader === -->
+            <%- include('./main2SecondHeader.ejs') %>
+
+            <!-- === mainContents === -->
+            <div class="mainContents">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+
+                        <!-- === leftSide === -->
+                        <div class="col-lg-4 leftSide">
+                            <div class="title">配送先を入力</div>
+                            <div class="container">
+                                <!-- === 性・名 === -->
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="性" />
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" placeholder="名" />
+                                    </div>
+                                </div>
+                                <!-- === セイ・メイ === -->
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="セイ" />
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" placeholder="メイ" />
+                                    </div>
+                                </div>
+                                <!-- === 市街局番・電話番号 === -->
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input
+                                            type="text"
+                                            placeholder="市街局番"
+                                        />
+                                    </div>
+                                    <div class="col-7">
+                                        <input
+                                            type="text"
+                                            placeholder="電話番号（例：12345678）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 郵便番号 === -->
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input
+                                            type="text"
+                                            placeholder="〒（123-4567）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 住所（都道府県） === -->
+                                <div class="row">
+                                    <div class="col-4">
+                                        <select name="" id="">
+                                            <option value="東京都"
+                                                >東京都</option
+                                            >
+                                        </select>
+                                    </div>
+                                    <div class="col-8">
+                                        <input
+                                            type="text"
+                                            placeholder="市区町村（11文字以内）（例）新宿区"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 番地 === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="番地など（17文字以内）（例）西新宿3-20-2"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 建物名 === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="建物名など（オプション）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 会社名 === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="会社名（オプション）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === 携帯電話番号 === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="携帯電話番号（オプション）"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- === メール === -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="E-MAIL"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- === rightSide === -->
+                        <div class="col-lg-4 rightSide">
+                            <div class="title">支払い方法を選択</div>
+                            <div class="radioLists">
+                                <!-- === 現金振り込み === -->
+                                <div class="radioList">
+                                    <label for="radioList1">
+                                        <input
+                                            type="radio"
+                                            name="radioList"
+                                            id="radioList1"
+                                        />
+                                        <p>
+                                            現行振込
+                                        </p>
+                                    </label>
+                                    <div>
+                                        提携銀行へ送金可能な日本全国の銀行、ATMからお振込みいただけます。<br />
+                                        （振込手数料はお客様負担となります。海外からの送金不可）
+                                    </div>
+                                </div>
+                                <!-- === クレジットカード === -->
+                                <div class="radioList">
+                                    <label for="radioList2">
+                                        <input
+                                            type="radio"
+                                            name="radioList"
+                                            id="radioList2"
+                                        />
+                                        <p>
+                                            クレジットカード
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+
+                <div class="submitButton">
+                    <button>注文内容の確認</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- === footer === -->
+        <%- include('../footer') %>
+
+        <script src="/lib/less/less.min.js"></script>
+    </body>
+</html>

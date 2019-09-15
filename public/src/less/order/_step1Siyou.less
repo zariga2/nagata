@@ -1,0 +1,152 @@
+@import "../common.less";
+
+main {
+    font-size: @base-fontsize;
+
+    /* === mainContents === */
+    .mainContents {
+        margin: 30px 0;
+
+        /* === leftSide === */
+        .leftSide {
+            @media @pc {
+                padding-left: 8vw;
+            }
+
+            /* === content === */
+            .content {
+                padding: 20px;
+
+                .title {
+                    font-size: @base-fontsize * 1.1;
+                    font-weight: bold;
+                    color: black;
+                }
+
+                .description {
+                    font-size: @base-fontsize * 0.9;
+                    margin-bottom: 10px;
+                    padding: 10px;
+
+                    .images {
+                        margin-bottom: 10px;
+
+                        .imageContent {
+                            display: inline-block;
+                            min-width: 30%;
+                            min-height: 100px;
+                            margin: 0 20px;
+                            border: solid 1px rgb(225, 225, 225);
+                            border-radius: 3px;
+
+                            img {
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    .radioLists {
+                        position: relative;
+
+                        .radioList {
+                            label {
+                                display: block;
+                                position: relative;
+                                padding-left: 1em;
+                            }
+
+                            label input {
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                margin: auto;
+                            }
+
+                            p {
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+
+                    .styledButton {
+                        border: none;
+                        height: @base-fontsize * 2;
+                        display: inline-block;
+                        background-color: white;
+                        border: solid 1px gray;
+                        padding: 0 10px;
+                        border-radius: 3px;
+                        margin: 0 10px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+
+                    .notice {
+                        color: rgb(22, 121, 219);
+                    }
+
+                    textarea {
+                        width: 95%;
+                        padding: 10px;
+                        border: solid 1px rgb(225, 225, 225);
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+
+        /* === rightSide === */
+        .rightSide {
+            .content {
+                background-color: @light;
+                padding: 20px;
+                border-radius: 5px;
+
+                .title {
+                    font-size: @base-fontsize * 1.2;
+                    font-weight: bold;
+                    text-align: center;
+                    border-bottom: solid 1px black;
+                    color: black;
+                }
+
+                .subLabel {
+                    margin: 15px 0;
+                    padding: 0 10px;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .description {
+                    padding: 10px;
+                    font-size: @base-fontsize * 0.8;
+                    color: gray;
+                    p {
+                        margin: 0;
+                    }
+
+                    ul {
+                        padding-left: 10px;
+                        list-style: none;
+                    }
+
+                    .submitButton {
+                        border: none;
+                        background-color: rgb(255, 54, 93);
+                        border-radius: 3px;
+                        padding: 0 15px;
+                        color: white;
+                        position: relative;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+/* === 変数 === */
+@base-fontsize : 10.5px;
+@black : #343a40;
+@light: #f8f9fa;
+@textblack : rgb(100, 100, 100);
+@submitbutton-color : rgb(33, 150, 209);
+
+/* === ブレイクポイントの変数 === */
+@-screen-sm: 992px; //	bootstrap のブレイクポイントと同様
+
+@sp-only-max: (@-screen-sm - 1);
+@pc-only-min: @-screen-sm;
+
+@sp: ~"(max-width: @{sp-only-max})";
+@pc: ~"(min-width: @{pc-only-min})";
+
+//	使い方
+@media @sp {
+    //	ここにスタイルを記述でスマホ、タブレット時のスタイルを指定できる
+}
+
+/* === 基本スタイル === */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: 200%;
+    color: @textblack;
+}
+
+a {
+    color: @black;
+}

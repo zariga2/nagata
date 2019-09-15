@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet/less" href="/src/less/order/_step1Siyou.less" />
+    </head>
+    <body>
+        <!-- === header === -->
+        <%- include('../header') %>
+
+        <main>
+            <!-- === mainFirstHeader === -->
+            <%- include('./main1FirstHeader.ejs') %>
+
+            <!-- === mainSecondHeader === -->
+            <%- include('./main2SecondHeader.ejs') %>
+
+            <!-- === mainContents === -->
+            <div class="mainContents">
+                <div class="container">
+                    <div class="row">
+                        <!-- === leftSide === -->
+                        <div class="col-md-8 leftSide">
+                            <!-- === Perfect Skinのサイズを選んでください。 === -->
+                            <div class="content">
+                                <div class="title">
+                                    Perfect Skinのサイズを選んでください。
+                                </div>
+                                <div class="description">
+                                    <div class="images">
+                                        <div class="imageContent">
+                                            <img src="" alt="" />
+                                        </div>
+                                        <div class="imageContent">
+                                            <img src="" alt="" />
+                                        </div>
+                                    </div>
+                                    <p>
+                                        ※全頭サイズの場合、オーダーメイドのみ取り扱いをしております。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- === 作成する方法を選んでください。 === -->
+                            <div class="content">
+                                <div class="title">
+                                    作成する方法を選んでください。
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        新規でご購入される方は、既製品をご注文して頂くことをおすすめ致します。<br />
+                                        PerfectSkinの品質をすぐに確認でき、次の注文時にお役立ちします。
+                                    </p>
+
+                                    <div class="radioLists">
+                                        <div class="radioList">
+                                            <label for="radioList1">
+                                                <input
+                                                    type="radio"
+                                                    name="radioList"
+                                                    id="radioList1"
+                                                />
+                                                <p>
+                                                    オーダーメイドで注文する。<br />
+                                                    自分に合った頭の型・毛髪密度作成できます。
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="radioList">
+                                            <label for="radioList2">
+                                                <input
+                                                    type="radio"
+                                                    name="radioList"
+                                                    id="radioList2"
+                                                />
+                                                <p>
+                                                    既製品を注文する。<br />
+                                                    既製品の場合、通常2週間～3週間以内に郵送いたします。
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="radioList">
+                                            <label for="radioList3">
+                                                <input
+                                                    type="radio"
+                                                    name="radioList"
+                                                    id="radioList3"
+                                                />
+                                                <p>
+                                                    複製する。<br />
+                                                    現在利用しているカツラを郵送することで、その仕様に合わせて作成できます。
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="radioList">
+                                            <label for="radioList4">
+                                                <input
+                                                    type="radio"
+                                                    name="radioList"
+                                                    id="radioList4"
+                                                />
+                                                <p>
+                                                    増毛する。<br />
+                                                    利用しているカツラに天然毛髪を追加する。
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- === 毛髪密度を選んでください。 === -->
+                            <div class="content">
+                                <div class="title">
+                                    毛髪密度を選んでください。
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        自分に適した毛髪密度が分からない場合は、「問い合わせて相談」を選択してください。<br />
+                                        装着後のイメージ写真より、適切な毛髪密度を提案させて頂きます。
+                                    </p>
+                                    <select name="" id="" class="styledButton">
+                                        <option value="100%">100%</option>
+                                    </select>
+                                    <button class="styledButton">
+                                        問い合わせて相談
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- === 髪の長さを選んでください。 === -->
+                            <div class="content">
+                                <div class="title">
+                                    髪の長さを選んでください。
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        15cmの長さまでは無料です。それ以上の長さの場合、1cmごとに1000円（税別）かかります。
+                                    </p>
+                                    <select name="" id="" class="styledButton">
+                                        <option value="15cm">15cm</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- === メンテナンスキッドを購入しますか。 === -->
+                            <div class="content">
+                                <div class="title">
+                                    メンテナスキットを購入しますか。
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        メンテナスキットには、メンテナスに必要な接着剤やリムーバなど備品一式が入っております。
+                                    </p>
+                                    <button class="styledButton">
+                                        はい
+                                    </button>
+                                    <button class="styledButton">
+                                        いいえ
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- === 出張サービスを利用しますか。 === -->
+                            <div class="content">
+                                <div class="title">
+                                    出張サービスを利用しますか。
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        出張サービスではお客様の指定した住所に弊社スタッフが訪問し、テンプレートの作成をします。<br />
+                                        費用はサービス代（1万円～）と往復の交通費になります。<br />
+                                        ※サービス代は地域ごとに異なるため、注文確定後のメールにて料金を連絡致します。
+                                    </p>
+                                    <button class="styledButton">
+                                        はい
+                                    </button>
+                                    <button class="styledButton">
+                                        いいえ
+                                    </button>
+                                    <p class="notice">
+                                        注文確定後、弊社スタッフよりテンプレートの作成方法と毛髪の色について連絡致します。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- === 上記以外に、ご要望があれば記入してください。 === -->
+                            <div class="content">
+                                <div class="title">
+                                    上記以外に、ご要望があれば記入してください。
+                                </div>
+                                <div class="description">
+                                    <textarea
+                                        name=""
+                                        id=""
+                                        cols="30"
+                                        rows="10"
+                                        placeholder="(例)&#13;&#10;・毛髪密度について相談させてください。&#13;&#10;・レプリカで使っているカツラを複製してほしいのですが、頭頂部の毛量を少し増やしてください。&#13;&#10;・後ほど、メールで写真を送付するので、その髪型に合わせて作成してほしい。"
+                                    ></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- === rightSide === -->
+                        <div class="col-md-4 rightSide">
+                            <div class="content">
+                                <div class="title">製品価格</div>
+                                <div class="subLabel">
+                                    <p>
+                                        購入価格<br />
+                                        6カ月仕様した場合のランニングコスト
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <p>※税別表記</p>
+                                    <ul>
+                                        <li>
+                                            ご購入時のお問い合わせは、こちらからお問い合わせください。
+                                        </li>
+                                        <li>
+                                            ランニングコストは、お支払い総額から6カ月単位で算出したものです。
+                                        </li>
+                                        <li>
+                                            製品は消耗品となり、お客様の扱い方法などで利用期間は変わります。
+                                        </li>
+                                    </ul>
+                                    <button class="submitButton">続ける</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- === footer === -->
+        <%- include('../footer') %>
+
+        <script src="/lib/less/less.min.js"></script>
+    </body>
+</html>

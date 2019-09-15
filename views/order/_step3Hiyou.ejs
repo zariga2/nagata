@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- === less === -->
+        <link rel="stylesheet/less" href="/src/less/order/_step3Hiyou.less" />
+    </head>
+    <body>
+        <!-- === header === -->
+        <%- include('../header') %>
+
+        <main>
+            <!-- === mainFirstHeader === -->
+            <%- include('./main1FirstHeader.ejs') %>
+
+            <!-- === mainSecondHeader === -->
+            <%- include('./main2SecondHeader.ejs') %>
+
+            <!-- === mainContents === -->
+            <div class="mainContents">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+
+                        <!-- === leftSide === -->
+                        <div class="col-lg-4 leftSide">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4">配送先住所</div>
+                                    <div class="col-8">三輪貴行</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4"></div>
+                                    <div class="col-8">
+                                        大阪府大阪市大淀6-12-12
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4">お支払い方法</div>
+                                    <div class="col-8">銀行振込</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- === rightSide === -->
+                        <div class="col-lg-6 rightSide">
+                            <div class="title">
+                                確認後、メールにて振込先をご連絡いたします。
+                            </div>
+                            <div class="detail">
+                                <p>製品代：193,000（税別）</p>
+                                <p>送料：6000（税別）</p>
+                                <div class="result">
+                                    <p>お支払い確定金額 ￥ 122,000（税込み）</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-1"></div>
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <a class="submitButton" href="./finish">確定</a>
+                </div>
+
+                <div class="notice">
+                    <ul>
+                        <li>
+                            ・確定後、お振込み先についてのメールが届きます。3日以上経っても連絡がない場合は、お問い合わせください。
+                        </li>
+                        <li>
+                            ・お客様のお振込みを確認した後、製品の製作を行います。カスタムを選択された場合、製品が完成するまで、1～2ヶ月ほどかかります。発送の1週間前に発送前にご連絡いたします。
+                        </li>
+                        <li>
+                            ・製品については、全て手作業で作成しております。厳格な品質管理をしておりますが、場合によっては完成品の品質にバラツキがありますこと、ご了承ください。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <!-- === footer === -->
+        <%- include('../footer') %>
+
+        <script src="/lib/less/less.min.js"></script>
+    </body>
+</html>
