@@ -1,0 +1,86 @@
+@import "../common.less";
+
+main {
+    font-size: @base-fontsize;
+    padding: 30px 0;
+
+    @media @sp {
+        padding: 30px 5px;
+    }
+
+    .mainContents {
+        max-width: 700px;
+        margin: auto;
+
+        /* === productContent === */
+        .productContent {
+            display: flex;
+            padding: 10px;
+
+            /* === contentImage === */
+            .contentImage {
+                min-height: 100px;
+                max-width: 40vw;
+                flex: 1;
+
+                img {
+                    background-color: rgb(175, 175, 175);
+                    min-width: 80%;
+                    min-height: 80%;
+                    position: relative;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+            }
+
+            /* === contentDetail === */
+            .contentDetail {
+                flex: 1;
+
+                /* === title === */
+                .title {
+                    font-weight: bold;
+                    font-size: @base-fontsize * 1.3;
+                }
+
+                /* === price === */
+                .price {
+                    font-weight: bold;
+                    font-size: @base-fontsize * 1.1;
+                }
+
+                /* === description / HowTo === */
+                .description,
+                .HowTo {
+                    margin: 5px 0;
+                    font-size: @base-fontsize * 0.9;
+                    .title {
+                        font-size: @base-fontsize * 0.9;
+                    }
+                }
+
+                /* === toCart === */
+                .toCart {
+                    text-align: center;
+
+                    select {
+                        padding: 3px 10px;
+                        margin: 0 5px;
+                        border: none;
+                        background-color: rgb(255, 255, 255);
+                        border-bottom: solid 1px black;
+                    }
+
+                    button {
+                        padding: 3px 10px;
+                        margin: 0 5px;
+                        border: solid 1px rgb(212, 212, 212);
+                        border-radius: 3px;
+                        background-color: rgb(33, 150, 209);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
