@@ -10,7 +10,14 @@ main {
         /* === leftSide === */
         .leftSide {
             margin-bottom: 30px;
-            padding: 0 15px;
+
+            @media @sp {
+                padding: 0 10%;
+            }
+
+            @media @pc {
+                min-width: 380px;
+            }
 
             .title {
                 color: black;
@@ -32,7 +39,9 @@ main {
 
         /* === rightSide === */
         .rightSide {
-            padding: 0 15px;
+            @media @sp {
+                padding: 0 10%;
+            }
 
             .title {
                 color: black;
