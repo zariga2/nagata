@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- === less === -->
+        <link
+            rel="stylesheet/less"
+            href="/src/less/contents/contact/_toiawase.less"
+        />
+    </head>
+    <body>
+        <!-- === header === -->
+        <%- include('../../header') %>
+
+        <main>
+            <%- include('./main1FirstHeader') %>
+
+            <!-- === mainContents === -->
+            <div class="mainContents container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+
+                    <!-- === personalData === -->
+                    <div class="col-md-5 personalData">
+                        <!-- === 姓（日本語表記） === -->
+                        <div class="element">
+                            <div class="elementTitle">姓（日本語表記）</div>
+                            <input type="text" class="elementForm" />
+                        </div>
+                        <!-- === 名（日本語表記） === -->
+                        <div class="element">
+                            <div class="elementTitle">名（日本語表記）</div>
+                            <input type="text" class="elementForm" />
+                        </div>
+                        <!-- === メールアドレス === -->
+                        <div class="element">
+                            <div class="elementTitle">メールアドレス</div>
+                            <input type="mail" class="elementForm" />
+                        </div>
+                        <!-- === 電話番号 === -->
+                        <div class="element">
+                            <div class="elementTitle">電話番号</div>
+                            <input type="text" class="elementForm" />
+                        </div>
+                        <!-- === 郵便番号 === -->
+                        <div class="element">
+                            <div class="elementTitle">郵便番号</div>
+                            <input type="text" class="elementForm" />
+                        </div>
+                        <!-- === 住所 === -->
+                        <div class="element">
+                            <div class="elementTitle">住所</div>
+                            <input type="text" class="elementForm" />
+                        </div>
+                        <!-- === Perfect Skinについてのお得情報を受け取る。 === -->
+                        <div class="element">
+                            <label class="radioList" for="radioList2">
+                                <input
+                                    type="radio"
+                                    name="radioList"
+                                    id="radioList2"
+                                />
+                                <p>
+                                    Perfect Skinについてのお得情報を受け取る。
+                                </p>
+                            </label>
+                        </div>
+                        <!-- === お電話での連絡を希望する。 === -->
+                        <div class="element">
+                            <label class="radioList" for="radioList2">
+                                <input
+                                    type="radio"
+                                    name="radioList"
+                                    id="radioList2"
+                                />
+                                <p>
+                                    お電話での連絡を希望する。
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- === formDetail === -->
+                    <div class="col-md-5 formDetail">
+                        <div class="title">問い合わせ内容</div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+
+            <!-- === submit === -->
+            <div class="submit">
+                <a href="" class="submitButton">問い合わせをする</a>
+            </div>
+        </main>
+
+        <!-- === footer === -->
+        <%- include('../../footer') %>
+
+        <script src="/lib/less/less.min.js"></script>
+    </body>
+</html>
