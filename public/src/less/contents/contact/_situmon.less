@@ -1,0 +1,56 @@
+@import "../../common.less";
+
+main {
+    font-size: @base-fontsize;
+    .mainContents {
+        /* === title === */
+        .title {
+            padding-left: 20px;
+            border-bottom: solid 1px gray;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: @base-fontsize * 1.5;
+        }
+
+        /* === content === */
+        .content {
+            .contentTitle {
+                font-size: @base-fontsize * 1.4;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .questions {
+                @media @sp {
+                    padding: 0 40px;
+                }
+                .question {
+                    margin-bottom: 30px;
+                    .questionTilte {
+                        font-size: @base-fontsize * 1.3;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+
+                    .answer {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        /* === submit === */
+        .submit {
+            text-align: center;
+            margin: 15px 0 30px;
+            .submitButton {
+                background-color: rgb(21, 140, 251);
+                color: white;
+                border: solid 1px rgb(220, 220, 220);
+                padding: 3px 20px;
+                font-size: @base-fontsize * 1.5;
+                border-radius: 3px;
+            }
+        }
+    }
+}
