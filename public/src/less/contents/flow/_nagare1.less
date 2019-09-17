@@ -1,0 +1,204 @@
+@import "../../common.less";
+
+main {
+    min-height: 80vh;
+    font-size: @base-fontsize;
+    padding: 30px;
+
+    /* === contents === */
+    .contents {
+        /* === titleBlock === */
+        .titleBlock {
+            margin: 30px 0;
+
+            .mainTitle {
+                font-size: @base-fontsize * 1.8;
+                font-weight: bold;
+            }
+
+            .titleDescription {
+            }
+        }
+
+        /* === contentTimeLine === */
+        .contentTimeLines {
+            padding: 0 20px;
+
+            /* === ● contentTimeLineCircle === */
+            .contentTimeLineCircle {
+                /* === leftSideBlock === */
+                .leftSideBlock {
+                }
+                /* === centerLineBlock === */
+                .centerLineBlock {
+                    text-align: center;
+
+                    .circleBlock {
+                        .outerCircle {
+                            display: inline-block;
+                            width: 2vw;
+                            height: 2vw;
+                            text-align: center;
+                            border-radius: 50%;
+                            border: solid 1px rgb(220, 220, 220);
+                            position: relative;
+                            transform: translate(0, 10%);
+
+                            .innerCircle {
+                                width: 1vw;
+                                height: 1vw;
+                                border-radius: 50%;
+                                background: rgb(219, 110, 37); /*背景色*/
+
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+                }
+                /* === rightSideBlock === */
+                .rightSideBlock {
+                }
+            }
+
+            /* === ■ contentTimeLineContent === */
+            .contentTimeLineContent {
+                /* === leftSideBlock === */
+                .imageSideBlock {
+                    min-height: 30vh;
+
+                    .content {
+                        display: inline-block;
+                        width: 80%;
+                        position: relative;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            display: inline-block;
+                        }
+                    }
+                }
+                /* === centerLineBlock === */
+                .centerLineBlock {
+                    text-align: center;
+
+                    .centerLine {
+                        display: inline-block;
+                        min-width: 2px;
+                        height: 100%;
+                        background-color: rgb(220, 220, 220);
+                    }
+                }
+                /* === rightSideBlock === */
+                .descriptionSideBlock {
+                    min-height: 30vh;
+                    padding: 20px 0;
+
+                    .title {
+                        font-size: @base-fontsize * 1.5;
+                        font-weight: bold;
+                    }
+
+                    .description {
+                        a {
+                            color: #0000ff;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* === border === */
+        .border {
+            margin: 30px 0;
+        }
+
+        /* === questions === */
+        .questions {
+            @media @pc {
+                padding: 0 50px;
+            }
+            /* === title === */
+            .title {
+                font-size: @base-fontsize * 1.5;
+            }
+
+            /* === question === */
+            .question {
+                margin: 20px 0;
+                .questionTitle {
+                    margin-bottom: 5px;
+                }
+                .answer {
+                    padding-left: 20px;
+                    .blue {
+                        color: #0000ff;
+                    }
+                }
+            }
+
+            /* === contactLink === */
+            .contactLink {
+                text-align: right;
+                a {
+                    color: #0000ff;
+                }
+            }
+        }
+
+        /* === PerfectSkinBlock === */
+        .PerfectSkinBlock {
+            /* === titleBlock === */
+            .titleBlock {
+                text-align: center;
+                .title {
+                    font-size: @base-fontsize * 2;
+                    font-weight: bold;
+                }
+                .description {
+                    font-size: @base-fontsize * 1.4;
+                }
+            }
+
+            /* === contents === */
+            .contents {
+                /* === content === */
+                .content {
+                    padding: 20px;
+
+                    /* === contentImage === */
+                    .contentImage {
+                        margin-bottom: 20px;
+                        img {
+                            display: inline-block;
+                            max-width: 80%;
+                            position: relative;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                        }
+                    }
+
+                    /* === contentDescription === */
+                    .contentDescription {
+                        font-size: @base-fontsize * 1.2;
+                        margin-bottom: 30px;
+                    }
+
+                    /* === contentLink === */
+                    .contentLink {
+                        text-align: right;
+                        a {
+                            color: #0000ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

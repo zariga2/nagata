@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="/lib/FontAwesome5/css/all.css" />
+
+        <!-- === less === -->
+        <link
+            rel="stylesheet/less"
+            href="/src/less/contents/flow/_nagare1.less"
+        />
+    </head>
+    <body>
+        <!-- === header === -->
+        <%- include('../../header') %>
+
+        <main>
+            <!-- === main1FirstHeader === -->
+            <%- include('./main1FirstHeader') %>
+
+            <!-- === contents === -->
+            <div class="contents container">
+                <!-- === titleBlock === -->
+                <div class="titleBlock">
+                    <div class="mainTitle">ご注文後の製品の受け取りの流れ</div>
+                    <div class="titleDescription">
+                        製品の代金のお支払い後から製品の受け取りまでの流れを説明いたします。
+                    </div>
+                </div>
+
+                <!-- === contentTimeLine === -->
+                <div class="contentTimeLines">
+                    <!-- === ● contentTimeLineCircle === -->
+                    <div class="row contentTimeLineCircle">
+                        <!-- === leftSideBlock === -->
+                        <div class="col-5 leftSideBlock"></div>
+                        <!-- === centerLineBlock === -->
+                        <div class="col-2 centerLineBlock">
+                            <div class="circleBlock">
+                                <div class="outerCircle">
+                                    <div class="innerCircle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === rightSideBlock === -->
+                        <div class="col-5 rightSideBlock"></div>
+                    </div>
+
+                    <!-- === ■ contentTimeLineContent === -->
+                    <div class="row contentTimeLineContent">
+                        <!-- === imageSideBlock === -->
+                        <div class="col-5 imageSideBlock">
+                            <div class="content">
+                                <img
+                                    src="/src/images/contents/flow/nagare2/pic1.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <!-- === centerLineBlock === -->
+                        <div class="col-2 centerLineBlock">
+                            <div class="centerLine"></div>
+                        </div>
+                        <!-- === descriptionSideBlock === -->
+                        <div class="col-5 descriptionSideBlock">
+                            <div class="content">
+                                <div class="title">
+                                    製品価格をお支払いしましょう。
+                                </div>
+                                <div class="description">
+                                    弊社にテンプレートが届き次第、お客様のサイズ・仕様を確認させていただき、ご登録頂いたメールアドレスに製品価格とお支払い先のご案内メールをお送りいたします。<br />
+                                    <br />
+                                    ＊既製品をご注文いただいた方は、通常、2-3週間以内に配送します。<br />
+                                    ＊オーダメイドでご注文ただいた方は、通常、2-3ヶ月以内に配送します。<br />
+                                    <br />
+                                    ＊注文後、10日以内にお支払いが確認できない場合、キャンセル扱いとなりますことご了承ください。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === ● contentTimeLineCircle === -->
+                    <div class="row contentTimeLineCircle">
+                        <!-- === leftSideBlock === -->
+                        <div class="col-5 leftSideBlock"></div>
+                        <!-- === centerLineBlock === -->
+                        <div class="col-2 centerLineBlock">
+                            <div class="circleBlock">
+                                <div class="outerCircle">
+                                    <div class="innerCircle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === rightSideBlock === -->
+                        <div class="col-5 rightSideBlock"></div>
+                    </div>
+
+                    <!-- === ■ contentTimeLineContent === -->
+                    <div class="row contentTimeLineContent">
+                        <!-- === descriptionSideBlock === -->
+                        <div class="col-5 descriptionSideBlock">
+                            <div class="content">
+                                <div class="title">
+                                    製品を受け取りましょう
+                                </div>
+                                <div class="description">
+                                    キャンセル扱いとなりますことご了承ください。<br />
+                                    製品発送の10日前にお客様にご登録いただいたメールアドレスにご連絡いたします。
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === centerLineBlock === -->
+                        <div class="col-2 centerLineBlock">
+                            <div class="centerLine"></div>
+                        </div>
+                        <!-- === imageSideBlock === -->
+                        <div class="col-5 imageSideBlock">
+                            <div class="content">
+                                <img
+                                    src="/src/images/contents/flow/nagare2/pic2.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === border === -->
+                <div class="border"></div>
+
+                <!-- === questions === -->
+                <div class="questions">
+                    <!-- === title === -->
+                    <div class="title">
+                        よくある質問
+                    </div>
+                    <!-- === question === -->
+                    <div class="question">
+                        <div class="questionTitle">
+                            Q. 製品の製作期間に日数がかかるのはなぜですか。
+                        </div>
+                        <div class="answer">
+                            製品の作成は海外で行っておりますますが、品質の確認などは全て日本国内を行っております。全ての製品に対して、スタッフが一人一人確認しておりますので、注文状況によってお時間がかかります。そのため現在は、カスタムオーダで注文された場合、2ヶ月から3ヶ月ほどお時間を頂いております。
+                        </div>
+                    </div>
+                    <!-- === contactLink === -->
+                    <div class="contactLink">
+                        <a href="/contents/contact/situmon">よくある質問へ ></a>
+                    </div>
+                </div>
+
+                <!-- === border === -->
+                <div class="border"></div>
+
+                <!-- === PerfectSkinBlock === -->
+                <div class="PerfectSkinBlock">
+                    <!-- === titleBlock === -->
+                    <div class="titleBlock">
+                        <div class="title">
+                            Perfect Skinを理解していただくために。
+                        </div>
+                        <div class="description">
+                            Pefect
+                            Skinは、オンラインで購入する製品となります。<br />
+                            製品の特長や購入の方法など、製品について理解いただけるように、<br />
+                            まずは下記のページを通じて製品理解を進めてください。
+                        </div>
+                    </div>
+
+                    <!-- === contents === -->
+                    <div class="contents">
+                        <div class="row">
+                            <!-- === content ①製品紹介 === -->
+                            <div class="col-sm-4 content">
+                                <!-- === contentImage === -->
+                                <div class="contentImage">
+                                    <img
+                                        src="/src/images/contents/flow/nagare2/pic3.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <!-- === contentDescription === -->
+                                <div class="contentDescription">
+                                    製品の特長やPerferc
+                                    Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+                                </div>
+                                <!-- === contentLink === -->
+                                <div class="contentLink">
+                                    <a href="/">①製品紹介</a>
+                                </div>
+                            </div>
+                            <!-- === content ②日々のメンテナンス === -->
+                            <div class="col-sm-4 content">
+                                <!-- === contentImage === -->
+                                <div class="contentImage">
+                                    <img
+                                        src="/src/images/contents/flow/nagare2/pic4.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <!-- === contentDescription === -->
+                                <div class="contentDescription">
+                                    製品の特長やPerferc
+                                    Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+                                </div>
+                                <!-- === contentLink === -->
+                                <div class="contentLink">
+                                    <a href="/">②日々のメンテナンス</a>
+                                </div>
+                            </div>
+                            <!-- === content ③ご注文の流れ ④製品費用 === -->
+                            <div class="col-sm-4 content">
+                                <!-- === contentImage === -->
+                                <div class="contentImage">
+                                    <img
+                                        src="/src/images/contents/flow/nagare2/pic5.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <!-- === contentDescription === -->
+                                <div class="contentDescription">
+                                    製品の特長やPerferc
+                                    Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+                                </div>
+                                <!-- === contentLink === -->
+                                <div class="contentLink">
+                                    <a href="/contents/flow/nagare1"
+                                        >③ご注文の流れ</a
+                                    >
+                                </div>
+                                <!-- === contentLink === -->
+                                <div class="contentLink">
+                                    <a href="/">④製品費用</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- === footer === -->
+        <%- include('../../footer') %>
+
+        <script src="/lib/less/less.min.js"></script>
+    </body>
+</html>
