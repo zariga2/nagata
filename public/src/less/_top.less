@@ -1,2 +1,77 @@
+@import "./common.less";
+
 body {
+  font-size: @base-fontsize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 200%;
+}
+
+header.masthead {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+
+  header.masthead h5 strong {
+    font-size: 120%;
+  }
+}
+
+.no-gutters {
+  padding-top: 5rem;
+}
+
+.showcase {
+  padding-top: 7rem;
+
+  .showcase-tittle {
+    text-decoration: underline;
+    color: #e4b454;
+  }
+
+  .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+  }
+
+  .showcase-text {
+    padding: 3rem;
+
+    .link-text {
+      font-size: @base-fontsize * 1.5;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .showcase-text {
+      padding: 7rem;
+    }
+  }
+}
+.testimonials {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .testimonials-text {
+    text-align: left;
+    font-size: @base-fontsize*1.3;
+  }
 }
