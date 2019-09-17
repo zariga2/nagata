@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- === less === -->
+        <link
+            rel="stylesheet/less"
+            href="/src/less/contents/cost/_seihin.less"
+        />
+    </head>
+    <body>
+        <!-- === header === -->
+        <%- include('../../header') %>
+
+        <main>
+            <!-- === mainTitleBlock === -->
+            <div class="mainTitleBlock">
+                <!-- === title === -->
+                <div class="title">
+                    私たちからの３つのお約束
+                </div>
+                <!-- === subTitle === -->
+                <div class="subTitle">
+                    明確に価格を提示しお客様が納得して購入できるよう万全にサポートします。
+                </div>
+            </div>
+
+            <!-- === threeCategoryBlock === -->
+            <div class="row threeCategoryBlock">
+                <!-- === content === -->
+                <div class="col-md-4 content">
+                    <div class="contentImage">
+                        <img
+                            src="/src/images/contents/cost/seihin/pic1.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="contentDescription">
+                        購入にあたって契約は不要です。初期費用や月額料金など一切かかりません。お好きなタイミングで購入できます。
+                    </div>
+                </div>
+                <!-- === content === -->
+                <div class="col-md-4 content">
+                    <div class="contentImage">
+                        <img
+                            src="/src/images/contents/cost/seihin/pic2.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="contentDescription">
+                        価格によって、製品に利用するベース素材が変更することはありません。
+                        常に同じ金額で最高品質の製品を提供します。
+                    </div>
+                </div>
+                <!-- === content === -->
+                <div class="col-md-4 content">
+                    <div class="contentImage">
+                        <img
+                            src="/src/images/contents/cost/seihin/pic3.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="contentDescription">
+                        常に同じ金額で最高品質の製品を提供します。
+                    </div>
+                </div>
+            </div>
+
+            <!-- === border === -->
+            <div class="border"></div>
+
+            <!-- === mainContent === -->
+            <div class="mainContent">
+                <!-- === contentTitleBlock === -->
+                <div class="contentTitleBlock">
+                    <div class="title">
+                        Perfect Skinの製品価格
+                    </div>
+                    <div class="description">
+                        料金プランは2パターンございます。<br />
+                        オーダメイドであっても、既製品であっても同じ製品価格で提供しております。それ以外にかかる費用はございません。
+                    </div>
+                </div>
+
+                <!-- === content === -->
+                <div class="row content">
+                    <!-- === detail === -->
+                    <div class="col-md-9 detail">
+                        <div class="row">
+                            <!-- === detailBlock left === -->
+                            <div class="col-4 detailBlock">
+                                <!-- === detailBlock-title === -->
+                                <div class="detailBlock-title">
+                                    25cm×25cm 以下のサイズ
+                                </div>
+                                <!-- === detailBlock-detail === -->
+                                <div class="detailBlock-detail">
+                                    <div class="price">
+                                        42,000
+                                        <span class="min">円</span>
+                                    </div>
+                                    <div class="description">
+                                        オプションで料金が変わることは一切ありません。
+                                    </div>
+                                </div>
+                                <!-- === icon === -->
+                                <div class="icon">
+                                    <div class="outerCircle">
+                                        +
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- === detailBlock center === -->
+                            <div class="col-4 detailBlock">
+                                <!-- === detailBlock-title === -->
+                                <div class="detailBlock-title">
+                                    髪の長さ・その他オプション
+                                </div>
+                                <!-- === detailBlock-detail === -->
+                                <div class="detailBlock-detail">
+                                    <div class="price">
+                                        0
+                                        <span class="min">円</span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="black">
+                                            15㎝までは無料です。
+                                            16cmからは1cmにつき1000円かかります。
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- === icon === -->
+                                <div class="icon">
+                                    <div class="outerCircle">
+                                        =
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- === detailBlock rigth === -->
+                            <div class="col-4 detailBlock">
+                                <!-- === detailBlock-title === -->
+                                <div class="detailBlock-title">
+                                    合計
+                                </div>
+                                <!-- === detailBlock-detail === -->
+                                <div class="detailBlock-detail">
+                                    <div class="price">
+                                        <span class="pink">
+                                            42,000
+                                            <span class="min">円</span>
+                                        </span>
+                                    </div>
+                                    <div class="description"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === result === -->
+                    <dic class="col-md-3 result">
+                        <!-- === detailBlock rigth === -->
+                        <div class="detailBlock">
+                            <!-- === detailBlock-title === -->
+                            <div class="detailBlock-title">
+                                月々のランニングコスト
+                            </div>
+
+                            <!-- === detailBlock-detail === -->
+                            <div class="detailBlock-detail">
+                                <div class="description">
+                                    4ヶ月間使用すれば
+                                </div>
+                                <div class="price">
+                                    <span class="pink">
+                                        10,500
+                                        <span class="min">円</span>
+                                    </span>
+                                </div>
+                                <div class="icon">
+                                    <div class="arrow">▶</div>
+                                </div>
+                            </div>
+
+                            <!-- === detailBlock-detail === -->
+                            <div class="detailBlock-detail">
+                                <div class="description">
+                                    4ヶ月間使用すれば
+                                </div>
+                                <div class="price">
+                                    <span class="pink">
+                                        8,400
+                                        <span class="min">円</span>
+                                    </span>
+                                </div>
+                                <div class="icon">
+                                    <div class="arrow">▶</div>
+                                </div>
+                                <div class="mention">
+                                    増毛サービスを利用すれば、さらにお得に！
+                                </div>
+                            </div>
+                        </div>
+                    </dic>
+                </div>
+
+                <!-- === content === -->
+                <div class="row content">
+                    <!-- === detail === -->
+                    <div class="col-md-9 detail">
+                        <div class="row">
+                            <!-- === detailBlock left === -->
+                            <div class="col-4 detailBlock">
+                                <!-- === detailBlock-title === -->
+                                <div class="detailBlock-title">
+                                    全頭サイズ
+                                </div>
+                                <!-- === detailBlock-detail === -->
+                                <div class="detailBlock-detail">
+                                    <div class="price">
+                                        51,000
+                                        <span class="min">円</span>
+                                    </div>
+                                    <div class="description">
+                                        オプションで料金が変わることは一切ありません。
+                                    </div>
+                                </div>
+                                <!-- === icon === -->
+                                <div class="icon">
+                                    <div class="outerCircle">
+                                        +
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- === detailBlock center === -->
+                            <div class="col-4 detailBlock">
+                                <!-- === detailBlock-title === -->
+                                <div class="detailBlock-title">
+                                    髪の長さ・その他オプション
+                                </div>
+                                <!-- === detailBlock-detail === -->
+                                <div class="detailBlock-detail">
+                                    <div class="price">
+                                        0
+                                        <span class="min">円</span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="black">
+                                            15㎝までは無料です。
+                                            16cmからは1cmにつき1000円かかります。
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- === icon === -->
+                                <div class="icon">
+                                    <div class="outerCircle">
+                                        =
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- === detailBlock rigth === -->
+                            <div class="col-4 detailBlock">
+                                <!-- === detailBlock-title === -->
+                                <div class="detailBlock-title">
+                                    合計
+                                </div>
+                                <!-- === detailBlock-detail === -->
+                                <div class="detailBlock-detail">
+                                    <div class="price">
+                                        <span class="pink">
+                                            51,000
+                                            <span class="min">円</span>
+                                        </span>
+                                    </div>
+                                    <div class="description"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === result === -->
+                    <dic class="col-md-3 result">
+                        <!-- === detailBlock rigth === -->
+                        <div class="detailBlock">
+                            <!-- === detailBlock-title === -->
+                            <div class="detailBlock-title">
+                                月々のランニングコスト
+                            </div>
+
+                            <!-- === detailBlock-detail === -->
+                            <div class="detailBlock-detail">
+                                <div class="description">
+                                    4ヶ月間使用すれば
+                                </div>
+                                <div class="price">
+                                    <span class="pink">
+                                        12,750
+                                        <span class="min">円</span>
+                                    </span>
+                                </div>
+                                <div class="icon">
+                                    <div class="arrow">▶</div>
+                                </div>
+                            </div>
+
+                            <!-- === detailBlock-detail === -->
+                            <div class="detailBlock-detail">
+                                <div class="description">
+                                    4ヶ月間使用すれば
+                                </div>
+                                <div class="price">
+                                    <span class="pink">
+                                        10,200
+                                        <span class="min">円</span>
+                                    </span>
+                                </div>
+                                <div class="icon">
+                                    <div class="arrow">▶</div>
+                                </div>
+                                <div class="mention">
+                                    増毛サービスを利用すれば、さらにお得に！
+                                </div>
+                            </div>
+                        </div>
+                    </dic>
+                </div>
+
+                <!-- === comment === -->
+                <div class="comment">
+                    ＊税別表記、送料は除く。
+                    <p>
+                        ご購入時のお問い合わせは、こちらからお問い合わせください。
+                    </p>
+                    <p>
+                        製品は消耗品となり、お客様の扱い方法などで利用期間は変わります。
+                    </p>
+                </div>
+
+                <!-- === link === -->
+                <div class="link">
+                    <button class="linkButton">
+                        <a href="/order/step1siyou">
+                            Perfet Skinを購入する
+                        </a>
+                    </button>
+                    <button class="linkButton">
+                        <a href="/order/bihin">
+                            備品を購入する
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- === footer === -->
+        <%- include('../../footer') %>
+
+        <script src="/lib/less/less.min.js"></script>
+    </body>
+</html>
