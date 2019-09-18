@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="/lib/FontAwesome5/css/all.css" />
+
+        <!-- === less === -->
+        <link
+            rel="stylesheet/less"
+            href="/src/less/contents/feature/_runningcost.less"
+        />
+    </head>
+    <body>
+        <!-- === header === -->
+        <%- include('../../header') %>
+
+        <main>
+            <!-- === main1FirstHeader === -->
+            <%- include('./main1FirstHeader') %>
+
+            <!-- === container === -->
+            <div class="container">
+                <!-- === topBlock === -->
+                <div class="topBlock">
+                    <div class="row">
+                        <!-- === leftSide === -->
+                        <div class="leftSide col-lg-6">
+                            <div class="mainTitle">
+                                驚きのランニングコスト<br />
+                                増毛して何度も使い回せる
+                            </div>
+                            <div class="subTitle">
+                                カツラの費用は、メンテナス代も含めて<br />
+                                本当の製品代金が分かります。
+                            </div>
+                            <div class="linkButton">
+                                <button>
+                                    <a href="">ランニングコストについて</a>
+                                </button>
+                                <button>
+                                    <a href="">増毛サービスについて </a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- === rightSide === -->
+                        <div class="rightSide col-lg-6 row">
+                            <div class="col-5 image">
+                                <img
+                                    src="/src/images/contents/feature/runningcost/pic1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="col-7 description">
+                                Perfect Skinを利用すると<br />
+                                <span class="level1"> 1年間で </span><br />
+                                <span class="level2"> 52,000 万円 </span><br />
+                                <span class="level1"> 5年間で </span><br />
+                                <span class="level2"> 102,000 万円 </span><br />
+                                を節約することができます。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- === bgTitleBlock === -->
+                <div class="bgTitleBlock">
+                    老後までずっと安心して利用できる製品。<br />
+                    一生使い続けるからこそ、<br />
+                    安心して利用できる価格です。
+                </div>
+
+                <!-- === contents === -->
+                <div class="contents">
+                    <!-- === content-style1 === -->
+                    <div class="content-style1">
+                        <div class="title">
+                            月々のランニングコストについて
+                        </div>
+                        <div class="description">
+                            一般的なメーカの場合、一枚あたりの製品費用はとても高い金額となります。<br />
+                            それに加え、店舗でのメンテナンス費用や専用シャンプーなどの消耗品を購入する必要があり、製品価格以外での月々のランニングコストはとても高くなります。例えば、30歳から70歳まで利用することを考えた場合、その費用は数百万となり高額になります。<br />
+                            <br />
+                            Perfect
+                            Skinでは、お客様サイズに合わせての2パターンの料金プランを用意しております。それ以外の費用は発生しません。<br />
+                            お客様がご購入後も安心して継続利用できるように、低価格・高品質の製品をご提供することをお約束します。
+                        </div>
+                        <div class="table">
+                            <img
+                                src="/src/images/contents/feature/runningcost/pic2.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <!-- === content-style2 === -->
+                    <div class="content-style2">
+                        <!-- === title === -->
+                        <div class="title">
+                            ランニングコストを計算してみましょう。
+                        </div>
+
+                        <!-- === description === -->
+                        <div class="description">
+                            Perfect
+                            Skinを利用することで、月々のランニングコストがどれだけ節約できるか確認できます。
+                        </div>
+
+                        <!-- === detai === -->
+                        <div class="row detail">
+                            <!-- === questions === -->
+                            <div class="col-lg-6 questions">
+                                <!-- === questionBlock : Ｑ１：現在お使いのメーカ名をご入力してください。 === -->
+                                <div class="questionBlock">
+                                    <div class="question">
+                                        Ｑ１：現在お使いのメーカ名をご入力してください。
+                                    </div>
+                                    <div class="form">
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                                <!-- === questionBlock : Ｑ２：ご利用しているカツラのサイズをご入力してください。 === -->
+                                <div class="questionBlock">
+                                    <div class="question">
+                                        Ｑ２：ご利用しているカツラのサイズをご入力してください。
+                                    </div>
+                                    <div class="form">
+                                        <button>25㎝×25cm以下のサイズ</button>
+                                        <button>それ以上の大きさ</button>
+                                    </div>
+                                </div>
+                                <!-- === questionBlock : Ｑ３：ご利用しているカツラの製品代金を選択してください。 === -->
+                                <div class="questionBlock">
+                                    <div class="question">
+                                        Ｑ３：ご利用しているカツラの製品代金を選択してください。
+                                    </div>
+                                    <div class="form">
+                                        <select name="" id="">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- === questionBlock : Ｑ４：月々にお支払いする調整代などのメンテナス代を入力してください。 === -->
+                                <div class="questionBlock">
+                                    <div class="question">
+                                        Ｑ４：月々にお支払いする調整代などのメンテナス代を入力してください。
+                                    </div>
+                                    <div class="form">
+                                        <select name="" id="">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- === questionBlock : Ｑ５：月々にかかる交通費を入力してください。=== -->
+                                <div class="questionBlock">
+                                    <div class="question">
+                                        Ｑ５：月々にかかる交通費を入力してください。
+                                    </div>
+                                    <div class="form">
+                                        <select name="" id="">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- === questionBlock : Ｑ６：月々の会費を入力してください。 === -->
+                                <div class="questionBlock">
+                                    <div class="question">
+                                        Ｑ６：月々の会費を入力してください。<br />
+                                        <span class="level1">
+                                            年会費の場合は、12分割してご入力ください。
+                                        </span>
+                                    </div>
+                                    <div class="form">
+                                        <select name="" id="">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- === questionBlock : Ｑ７：上記以外での修理代などの追加費用をご入力ください。=== -->
+                                <div class="questionBlock">
+                                    <div class="question">
+                                        Ｑ７：上記以外での修理代などの追加費用をご入力ください。
+                                    </div>
+                                    <div class="form">
+                                        <select name="" id="">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- === calcuButton === -->
+                                <div class="calcuButton">
+                                    <button>結果を見る</button>
+                                </div>
+                            </div>
+
+                            <!-- === result === -->
+                            <div class="result col-lg-6 row">
+                                <div class="col-5 image">
+                                    <img
+                                        src="/src/images/contents/feature/runningcost/pic1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="col-7 description">
+                                    Perfect Skinを利用すると<br />
+                                    <span class="level1"> 1年間で </span><br />
+                                    <span class="level2"> 52,000 万円 </span
+                                    ><br />
+                                    <span class="level1"> 5年間で </span><br />
+                                    <span class="level2"> 102,000 万円 </span
+                                    ><br />
+                                    を節約することができます。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === border === -->
+                <div class="border"></div>
+
+                <!-- === serviceBlock === -->
+                <div class="serviceBlock">
+                    <div class="title">
+                        増毛サービスについて
+                    </div>
+                    <div class="description">
+                        一般メーカの場合、年契約で数枚のカツラを購入します。ただし製品の摩耗がある場合、修理代が発生したり、新規のカツラをご購入せざる得ないケースがあります。実はそういった積み重ねが、自分が想定していた当初の費用より、高くなる一つの要因となります。<br />
+                        <br />
+                        Perfect
+                        Skinでは、ベースが破れていない場合なら何度でも増毛できるように設計されています。費用についても、1万円～3万円（税抜き）とかなりお得です。なのでお好きなタイミングでお金を払うため定額制に入るよりも圧倒的にお得です。
+                    </div>
+                    <div class="images row">
+                        <div class="col-6">
+                            <img
+                                src="/src/images/contents/feature/runningcost/pic3.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="col-6">
+                            <img
+                                src="/src/images/contents/feature/runningcost/pic4.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === border === -->
+                <div class="border"></div>
+
+                <!-- === PerfectSkinBlock : Perfect Skinを理解していただくために。 === -->
+                <div class="PerfectSkinBlock">
+                    <!-- === titleBlock === -->
+                    <div class="titleBlock">
+                        <div class="title">
+                            Perfect Skinを理解していただくために。
+                        </div>
+                        <div class="description">
+                            Pefect
+                            Skinは、オンラインで購入する製品となります。<br />
+                            製品の特長や購入の方法など、製品について理解いただけるように、<br />
+                            まずは下記のページを通じて製品理解を進めてください。
+                        </div>
+                    </div>
+
+                    <!-- === contents === -->
+                    <div class="contents">
+                        <div class="row">
+                            <!-- === content ①製品紹介 === -->
+                            <div class="col-sm-4 content">
+                                <!-- === contentImage === -->
+                                <div class="contentImage">
+                                    <img
+                                        src="/src/images/contents/flow/nagare1/pic4.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <!-- === contentDescription === -->
+                                <div class="contentDescription">
+                                    製品の特長やPerferc
+                                    Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+                                </div>
+                                <!-- === contentLink === -->
+                                <div class="contentLink">
+                                    <a href="/">①製品紹介</a>
+                                </div>
+                            </div>
+                            <!-- === content ②日々のメンテナンス === -->
+                            <div class="col-sm-4 content">
+                                <!-- === contentImage === -->
+                                <div class="contentImage">
+                                    <img
+                                        src="/src/images/contents/flow/nagare1/pic5.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <!-- === contentDescription === -->
+                                <div class="contentDescription">
+                                    製品の特長やPerferc
+                                    Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+                                </div>
+                                <!-- === contentLink === -->
+                                <div class="contentLink">
+                                    <a href="/">②日々のメンテナンス</a>
+                                </div>
+                            </div>
+                            <!-- === content ③ご注文の流れ ④製品費用 === -->
+                            <div class="col-sm-4 content">
+                                <!-- === contentImage === -->
+                                <div class="contentImage">
+                                    <img
+                                        src="/src/images/contents/flow/nagare1/pic5.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <!-- === contentDescription === -->
+                                <div class="contentDescription">
+                                    製品の特長やPerferc
+                                    Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+                                </div>
+                                <!-- === contentLink === -->
+                                <div class="contentLink">
+                                    <a href="/contents/flow/nagare1"
+                                        >③ご注文の流れ</a
+                                    >
+                                </div>
+                                <!-- === contentLink === -->
+                                <div class="contentLink">
+                                    <a href="/">④製品費用</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- === footer === -->
+        <%- include('../../footer') %>
+
+        <script src="/lib/less/less.min.js"></script>
+    </body>
+</html>
