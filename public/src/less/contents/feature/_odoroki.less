@@ -1,0 +1,190 @@
+@import "../../common.less";
+
+main {
+    font-size: @base-fontsize;
+    min-height: 80vh;
+
+    /* === container === */
+    .container {
+        /* === mainTitleBlock === */
+        .mainTitleBlock {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+
+            /* === mainTitle === */
+            .mainTitle {
+                font-size: @base-fontsize * 3;
+            }
+
+            /* === subTitle === */
+            .subTitle {
+                font-size: @base-fontsize * 2.8;
+            }
+        }
+
+        /* === mainImage === */
+        .mainImage {
+            margin-bottom: 30px;
+            img {
+                display: inline-block;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        /* === secondTitleBlock === */
+        .secondTitleBlock {
+            font-size: @base-fontsize * 2.2;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* === contents === */
+        .contents {
+            margin: 50px 0;
+
+            @media @pc {
+                padding: 0 100px;
+            }
+            /* === content-style1 === */
+            .content-style1 {
+                margin-bottom: 20vh;
+                /* === detail === */
+                .detail {
+                    .title {
+                        font-size: @base-fontsize * 1.8;
+                        font-weight: bold;
+                        .yellow {
+                            .under {
+                                text-decoration: underline;
+                            }
+                            color: rgb(216, 142, 6);
+                        }
+                    }
+
+                    .description {
+                        margin: 20px 0;
+                    }
+
+                    .link {
+                        text-align: right;
+                        a {
+                            color: @link-color;
+                            padding: 0 30px;
+                        }
+                    }
+                }
+
+                /* === image === */
+                .image {
+                    img {
+                        display: inline-block;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .content-style2 {
+                margin-bottom: 20vh;
+                .title {
+                    font-size: @base-fontsize * 1.8;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+
+                .description {
+                    margin-bottom: 10px;
+
+                    .sm {
+                        font-size: @base-fontsize * 0.8;
+                    }
+                }
+
+                .image {
+                    @media @pc {
+                        padding: 0 15vw;
+                    }
+                    img {
+                        display: inline-block;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        /* === mainVideo === */
+        .mainVideo {
+            margin-bottom: 15vh;
+            @media @pc {
+                padding: 0 10vw;
+            }
+            img {
+                display: inline-block;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        /* === PerfectSkinBlock === */
+        .PerfectSkinBlock {
+            margin-bottom: 50px;
+            @media @pc {
+                padding: 0 40px;
+            }
+            /* === titleBlock === */
+            .titleBlock {
+                text-align: center;
+                .title {
+                    font-size: @base-fontsize * 2;
+                    font-weight: bold;
+                }
+                .description {
+                    font-size: @base-fontsize * 1.4;
+                }
+            }
+
+            /* === contents === */
+            .contents {
+                /* === content === */
+                .content {
+                    padding: 20px;
+
+                    /* === contentImage === */
+                    .contentImage {
+                        margin-bottom: 20px;
+                        img {
+                            display: inline-block;
+                            max-width: 80%;
+                            position: relative;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                        }
+                    }
+
+                    /* === contentDescription === */
+                    .contentDescription {
+                        font-size: @base-fontsize * 1.2;
+                        margin-bottom: 30px;
+                    }
+
+                    /* === contentLink === */
+                    .contentLink {
+                        text-align: right;
+                        a {
+                            color: #0000ff;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* === border === */
+        .border {
+            margin-bottom: 15vh;
+        }
+    }
+}
