@@ -1,143 +1,215 @@
 <!DOCTYPE html>
-  <html lang="ja">
+<html lang="ja">
     <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>Document</title>
-      <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-      <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
-      <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      <link rel="stylesheet/less" href="/src/less/_top.less" />
+        <link rel="stylesheet/less" href="/src/less/_top.less" />
     </head>
+
     <body>
-      <!-- === header === -->
-      <%- include('./header') %>
-      <!-- head container -->
-      <header class="masthead text-black text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12 mx-auto">
-              <h1 class="mb-5"><strong>
-                Perfect Skin<br />
-                たった一枚で、カッコいい男に。</strong>
-              </h1>
-              <h5>
-                薄さわずか<strong>数<i>μ</i>の極薄ベース</strong>と<strong>最高品質</strong>の<strong>天然毛髪</strong>で、本来の毛髪と変わらない体験を得ることができます。<br />
-                <strong>Perfect
-                Skin</strong>が極限までこだわった自然な生え際により、<strong>どんなヘアスタイル</strong>も可能に。<br />
-                <strong>かつら</strong>ではない、<strong>今までになかった新しい</strong>を体験ください。
-              </h5>
-            </div>
-          </div>
-        </div>
-      </header>
+        <!-- === header === -->
+        <%- include('./header') %>
 
-      <!-- === youtube埋め込み === -->
-      <div class="container">
-        <div class="row">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              class="embed-responsive-item"
-              src="https://youtu.be/M6CN5jgCPtk"
-              allowfullscreen
-            ></iframe>
-            <!-- === Youtube挿入 === -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Image Showcases -->
-      <section class="showcase">
-        <div class="container-fluid p-0">
-          <div class="row no-gutters">
-            <div
-              class="col-lg-6 order-lg-2 text-white showcase-img"
-              style="background-image: url('/src/images/top/showcases01.jpg');" 
-            ></div>
-            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-              <h2><span class="showcase-tittle">どんなスタイル</span>でも</h2>
-                <h1>本当にリアルな生え際</h1>
-              <p class="lead mb-0">
-                わずか数ミクロンの極薄ベースに最高品質の天然毛髪を利用しています。極薄ベースが地肌に馴染むことで、肉眼では分からない印象になります。通気性も高い素材を利用することで、ムレやかゆみを極力抑えました。天然毛髪だから自然な質感を得ることで、心にも余裕が生まれます。
-              </p>
-              <div style="text-align: right">
-                <div class="link-text">
-                    <a href="/">更に詳しく ></a>
+        <main>
+            <!-- head container -->
+            <!-- === mainTitle === -->
+            <header class="masthead text-black text-center mainTitleBlock">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 mx-auto">
+                            <!-- === mainTitle === -->
+                            <h1 class="mb-5 mainTitle">
+                                <strong>
+                                    Perfect Skin<br />
+                                    たった一枚で、カッコいい男に。</strong
+                                >
+                            </h1>
+                            <!-- === subTitle === -->
+                            <h5 class="subTitle">
+                                薄さわずか<strong>数<i>μ</i>の極薄ベース</strong>と<strong>最高品質</strong>の<strong>天然毛髪</strong>で、本来の毛髪と変わらない体験を得ることができます。<br />
+                                <strong>Perfect Skin</strong
+                                >が極限までこだわった自然な生え際により、<strong>どんなヘアスタイル</strong>も可能に。<br />
+                                <strong>かつら</strong
+                                >ではない、<strong>今までになかった新しい</strong>を体験ください。
+                            </h5>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="row no-gutters">
-            <div
-              class="col-lg-6 text-white showcase-img"
-              style="background-image: url('/src/images/top/showcases02.jpg');"
-            ></div>
-            <div class="col-lg-6 my-auto showcase-text">
-              <h2><span class="showcase-tittle">全てのことが</span>簡単にご自宅で</h2>
-                <h1>耐久性に優れた安心設計</h1>
-              <p class="lead mb-0">
-                Perfect
-                Skinでは、ご購入から着脱・日々のメンテナンスまで全てのことが、一人で簡単にできます。店舗でメンテナンスを行う必要がないため、日々の時間もお金にも余裕が生まれます。
-              </p>
-              <div style="text-align: right">
-                <div class="link-text">
-                <a href="/">更に詳しく ></a>
+            </header>
+
+            <!-- === youtube埋め込み === -->
+            <!-- === container === -->
+            <div class="container youtubeBlock">
+                <div class="row">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://youtu.be/M6CN5jgCPtk"
+                            allowfullscreen
+                        ></iframe>
+                        <!-- === Youtube挿入 === -->
+                    </div>
                 </div>
             </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- foot container -->
-      <section class="testimonials text-center">
-        <div class="container">
-          <hr />
-          <h1 class="mb-5">Perfect Skinを理解していただくために</h1>
-          <h4 class="mb-5">
-            Perfect Skinは、オンライン購入する製品となります。<br />
-            製品の特長や購入の方法など、製品について理解いただけるように、<br />
-            まずは下記のぺージを通じて製品理解を進めてください。
-          </h4>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img class="img-fluid rounded-circle mb-3" src="/src/images/top/showcases02.jpg" alt="" />
-                <!-- === srcに画像挿入 === -->
-                <div class="testimonials-text">
-                    製品の特長やPerfect
-                    Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+            <!-- === contents === -->
+            <div class="contents container">
+                <!-- === content === -->
+                <div class="content row">
+                    <!-- === leftSide === -->
+                    <div class="leftSide col-lg-6">
+                        <!-- === detail === -->
+                        <div class="detail">
+                            <div class="topTitle">
+                                <span class="underLine">どんなスタイル</span
+                                >でも
+                            </div>
+                            <div class="subTitle">本当にリアルな生え際</div>
+                            <div class="description">
+                                わずか数ミクロンの極薄ベースに最高品質の天然毛髪を利用しています。極薄ベースが地肌に馴染むことで、肉眼では分からない印象になります。通気性も高い素材を利用することで、ムレやかゆみを極力抑えました。天然毛髪だから自然な質感を得ることで、心にも余裕が生まれます。
+                            </div>
+                            <div class="link">
+                                さらに詳しく >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- === rightSide === -->
+                    <div class="rightSide col-lg-6">
+                        <div class="image">
+                            <img src="/src/images/top/showcases01.jpg" alt="" />
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img class="img-fluid rounded-circle mb-3" src="/src/images/top/showcases02.jpg" alt="" />
-                <!-- === srcに画像挿入 === -->
-                <div class="testimonials-text">
-                  日々のメンテナンス方法を知りましょう。店舗に通う必要もなく、簡単にメンテナンスが出来ることをご理解いただけるかと思います。
+                <!-- === content === -->
+                <div class="content row">
+                    <!-- === rightSide === -->
+                    <div class="leftSide col-lg-6">
+                        <div class="image">
+                            <img src="/src/images/top/showcases02.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- === leftSide === -->
+                    <div class="rightSide col-lg-6">
+                        <!-- === detail === -->
+                        <div class="detail">
+                            <div class="topTitle">
+                                <span class="underLine">全てのこと</span
+                                >が簡単にご自宅で
+                            </div>
+                            <div class="subTitle">耐久性に優れた安心設計</div>
+                            <div class="description">
+                                Perfect
+                                Skinでは、ご購入から着脱・日々のメンテナンスまで全てのことが、一人で簡単にできます。店舗でメンテナンスを行う必要がないため、日々の時間もお金にも余裕が生まれます。
+                            </div>
+                            <div class="link">
+                                さらに詳しく >
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-4">
-              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img class="img-fluid rounded-circle mb-3" src="/src/images/top/showcases02.jpg" alt="" />
-                <!-- === srcに画像挿入 === -->
-                <div class="testimonials-text">
-                  ご注文から商品の受け取りまでの流れを把握しましょう。店舗に通うことなく、誰にも会わずに簡単にご注文いただけます。
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- === footer === -->
-      <%- include('./footer') %>
 
-      <script src="/lib/less/less.min.js"></script>
+            <!-- === border === -->
+            <div class="border"></div>
+
+            <!-- === PerfectSkinBlock : Perfect Skinを理解していただくために。 === -->
+            <div class="PerfectSkinBlock">
+                <!-- === titleBlock === -->
+                <div class="titleBlock">
+                    <div class="title">
+                        Perfect Skinを理解していただくために。
+                    </div>
+                    <div class="description">
+                        Pefect Skinは、オンラインで購入する製品となります。<br />
+                        製品の特長や購入の方法など、製品について理解いただけるように、<br />
+                        まずは下記のページを通じて製品理解を進めてください。
+                    </div>
+                </div>
+
+                <!-- === contents === -->
+                <div class="contents">
+                    <div class="row">
+                        <!-- === content ①製品紹介 === -->
+                        <div class="col-sm-4 content">
+                            <!-- === contentImage === -->
+                            <div class="contentImage">
+                                <img
+                                    src="/src/images/contents/flow/nagare1/pic4.png"
+                                    alt=""
+                                />
+                            </div>
+                            <!-- === contentDescription === -->
+                            <div class="contentDescription">
+                                製品の特長やPerferc
+                                Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+                            </div>
+                            <!-- === contentLink === -->
+                            <div class="contentLink">
+                                <a href="/contents/feature/odoroki"
+                                    >①製品紹介</a
+                                >
+                            </div>
+                        </div>
+                        <!-- === content ②日々のメンテナンス === -->
+                        <div class="col-sm-4 content">
+                            <!-- === contentImage === -->
+                            <div class="contentImage">
+                                <img
+                                    src="/src/images/contents/flow/nagare1/pic5.png"
+                                    alt=""
+                                />
+                            </div>
+                            <!-- === contentDescription === -->
+                            <div class="contentDescription">
+                                製品の特長やPerferc
+                                Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+                            </div>
+                            <!-- === contentLink === -->
+                            <div class="contentLink">
+                                <a href="/contents/maintenance/tyakudatu"
+                                    >②日々のメンテナンス</a
+                                >
+                            </div>
+                        </div>
+                        <!-- === content ③ご注文の流れ ④製品費用 === -->
+                        <div class="col-sm-4 content">
+                            <!-- === contentImage === -->
+                            <div class="contentImage">
+                                <img
+                                    src="/src/images/contents/flow/nagare1/pic5.png"
+                                    alt=""
+                                />
+                            </div>
+                            <!-- === contentDescription === -->
+                            <div class="contentDescription">
+                                製品の特長やPerferc
+                                Skinの自然さをご確認ください。低価格ながらも安心してご利用できる製品です。
+                            </div>
+                            <!-- === contentLink === -->
+                            <div class="contentLink">
+                                <a href="/contents/flow/nagare1"
+                                    >③ご注文の流れ</a
+                                >
+                            </div>
+                            <!-- === contentLink === -->
+                            <div class="contentLink">
+                                <a href="/contents/cost/seihin">④製品費用</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- === footer === -->
+        <%- include('./footer') %>
+
+        <script src="/lib/less/less.min.js"></script>
     </body>
-   
-  </html>
 </html>
