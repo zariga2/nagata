@@ -1,7 +1,7 @@
 @import "./common.less";
 
 body {
-  font-size: @base-fontsize;
+    font-size: @base-fontsize;
 }
 
 h1,
@@ -9,69 +9,198 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  line-height: 200%;
+h6,
+p {
+    line-height: 200%;
+    font-size: @base-fontsize;
 }
 
 header.masthead {
-  padding-top: 4rem;
-  padding-bottom: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
-  header.masthead {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
+    font-size: @base-fontsize;
+    header.masthead {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
 
-  header.masthead h1 {
-    font-size: 3rem;
-  }
+    header.masthead h1 {
+        font-size: @base-fontsize;
+    }
 
-  header.masthead h5 strong {
-    font-size: 120%;
-  }
+    header.masthead h5 strong {
+        font-size: @base-fontsize;
+    }
 }
 
 .no-gutters {
-  padding-top: 5rem;
+    padding-top: 5rem;
 }
 
 .showcase {
-  padding-top: 7rem;
-
-  .showcase-tittle {
-    text-decoration: underline;
-    color: #e4b454;
-  }
-
-  .showcase-img {
-    min-height: 30rem;
-    background-size: cover;
-    background-position: center center;
-    margin: auto;
-  }
-
-  .showcase-text {
-    padding: 3rem;
-
-    .link-text {
-      font-size: @base-fontsize * 1.5;
+    padding-top: 7rem;
+    .lead {
+        font-size: @base-fontsize;
     }
-  }
 
-  @media (min-width: 768px) {
+    .showcase-tittle {
+        text-decoration: underline;
+        color: #e4b454;
+    }
+
+    .showcase-img {
+        min-height: 30rem;
+        background-size: cover;
+        background-position: center center;
+        margin: auto;
+    }
+
     .showcase-text {
-      padding: 7rem;
+        padding: 3rem;
+
+        .link-text {
+            font-size: @base-fontsize;
+        }
     }
-  }
+
+    @media (min-width: 768px) {
+        .showcase-text {
+            padding: 7rem;
+        }
+    }
 }
 .testimonials {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
-  .testimonials-text {
-    text-align: left;
-    font-size: @base-fontsize*1.3;
-  }
+    .testimonials-text {
+        text-align: left;
+        font-size: @base-fontsize;
+    }
+}
+
+/* === 追加スタイル === */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    /* === mainTitle === */
+    .mainTitleBlock {
+        .mainTitle {
+            font-size: @base-fontsize * 2.5;
+        }
+        .subTitle {
+            font-size: @base-fontsize * 1.1;
+        }
+    }
+
+    /* === youtubeBlock === */
+    .youtubeBlock {
+        margin-bottom: 10vh;
+    }
+
+    /* === contents === */
+    .contents {
+        /* === content === */
+        .content {
+            margin: 15vh auto;
+            /* === leftSide === */
+            /* === rightSide === */
+            .leftSide,
+            .rightSide {
+                /* === detail === */
+                .detail {
+                    .topTitle {
+                        color: #e4b454;
+                        font-size: @base-fontsize * 1.5;
+                        .underLine {
+                            text-decoration: underline;
+                        }
+                    }
+                    .subTitle {
+                        font-size: @base-fontsize * 1.8;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+                    .description {
+                    }
+                    .link {
+                        text-align: right;
+                        color: @link-color;
+                    }
+                }
+
+                /* === img === */
+                .image {
+                    padding: 0 50px;
+                    img {
+                        display: inline-block;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    /* === PerfectSkinBlock === */
+    .PerfectSkinBlock {
+        margin-bottom: 50px;
+        @media @pc {
+            padding: 0 40px;
+        }
+        /* === titleBlock === */
+        .titleBlock {
+            text-align: center;
+            .title {
+                font-size: @base-fontsize * 2;
+                font-weight: bold;
+            }
+            .description {
+                font-size: @base-fontsize * 1.4;
+            }
+        }
+
+        /* === contents === */
+        .contents {
+            /* === content === */
+            .content {
+                padding: 20px;
+
+                /* === contentImage === */
+                .contentImage {
+                    margin-bottom: 20px;
+                    img {
+                        display: inline-block;
+                        max-width: 80%;
+                        position: relative;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                }
+
+                /* === contentDescription === */
+                .contentDescription {
+                    font-size: @base-fontsize * 1.2;
+                    margin-bottom: 30px;
+                }
+
+                /* === contentLink === */
+                .contentLink {
+                    text-align: right;
+                    a {
+                        color: #0000ff;
+                    }
+                }
+            }
+        }
+    }
+
+    /* === border === */
+    .border {
+        margin: 10vh 0;
+    }
 }
