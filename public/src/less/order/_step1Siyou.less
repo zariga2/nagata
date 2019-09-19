@@ -1,152 +1,159 @@
 @import "../common.less";
 
 main {
-    font-size: @base-fontsize;
+	font-size: @base-fontsize;
 
-    /* === mainContents === */
-    .mainContents {
-        margin: 30px 0;
+	/* === mainContents === */
+	.mainContents {
+		margin: 30px 0;
 
-        /* === leftSide === */
-        .leftSide {
-            @media @pc {
-                padding-left: 8vw;
-            }
+		/* === leftSide === */
+		.leftSide {
+			@media @pc {
+				padding-left: 8vw;
+			}
 
-            /* === content === */
-            .content {
-                padding: 20px;
+			/* === content === */
+			.content {
+				padding: 20px;
 
-                .title {
-                    font-size: @base-fontsize * 1.1;
-                    font-weight: bold;
-                    color: black;
-                }
+				.title {
+					font-size: @base-fontsize * 1.1;
+					font-weight: bold;
+					color: black;
+				}
 
-                .description {
-                    font-size: @base-fontsize * 0.9;
-                    margin-bottom: 10px;
-                    padding: 10px;
+				.description {
+					font-size: @base-fontsize * 0.9;
+					margin-bottom: 10px;
+					padding: 10px;
 
-                    .images {
-                        margin-bottom: 10px;
+					.images {
+						margin-bottom: 10px;
 
-                        .imageContent {
-                            display: inline-block;
-                            min-width: 30%;
-                            min-height: 100px;
-                            margin: 0 20px;
-                            border: solid 1px rgb(225, 225, 225);
-                            border-radius: 3px;
+						.imageContent {
+							display: inline-block;
+							height: 100px;
+							margin: 0 5px;
+							border: solid 1px rgb(225, 225, 225);
+							border-radius: 3px;
 
-                            img {
-                                display: inline-block;
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
+							@media @pc {
+								margin: 0 20px;
+							}
 
-                    .radioLists {
-                        position: relative;
+							img {
+								display: inline-block;
+								height: 100%;
+								object-fit: cover;
+							}
+						}
+					}
 
-                        .radioList {
-                            label {
-                                display: block;
-                                position: relative;
-                                padding-left: 1em;
-                            }
+					.radioLists {
+						position: relative;
 
-                            label input {
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                margin: auto;
-                            }
+						.radioList {
+							label {
+								display: block;
+								position: relative;
+								padding-left: 1em;
+							}
 
-                            p {
-                                margin-left: 15px;
-                            }
-                        }
-                    }
+							label input {
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								left: 0;
+								margin: auto;
+							}
 
-                    .styledButton {
-                        border: none;
-                        height: @base-fontsize * 2;
-                        display: inline-block;
-                        background-color: white;
-                        border: solid 1px gray;
-                        padding: 0 10px;
-                        border-radius: 3px;
-                        margin: 0 10px;
-                        font-weight: bold;
-                        margin-bottom: 10px;
-                    }
+							p {
+								margin-left: 15px;
+							}
+						}
+					}
 
-                    .notice {
-                        color: rgb(22, 121, 219);
-                    }
+					.styledButton {
+						border: none;
+						height: @base-fontsize * 2;
+						display: inline-block;
+						background-color: white;
+						border: solid 1px gray;
+						padding: 0 10px;
+						border-radius: 3px;
+						margin: 0 10px;
+						font-weight: bold;
+						margin-bottom: 10px;
+					}
 
-                    textarea {
-                        width: 95%;
-                        padding: 10px;
-                        border: solid 1px rgb(225, 225, 225);
-                        border-radius: 3px;
-                    }
-                }
-            }
-        }
+					.notice {
+						color: rgb(22, 121, 219);
+					}
 
-        /* === rightSide === */
-        .rightSide {
-            .content {
-                background-color: @light;
-                padding: 20px;
-                border-radius: 5px;
+					textarea {
+						width: 95%;
+						padding: 10px;
+						border: solid 1px rgb(225, 225, 225);
+						border-radius: 3px;
+					}
+				}
+			}
+		}
 
-                .title {
-                    font-size: @base-fontsize * 1.2;
-                    font-weight: bold;
-                    text-align: center;
-                    border-bottom: solid 1px black;
-                    color: black;
-                }
+		/* === rightSide === */
+		.rightSide {
+			.content {
+				background-color: @light;
+				padding: 20px;
+				border-radius: 5px;
 
-                .subLabel {
-                    margin: 15px 0;
-                    padding: 0 10px;
+				.title {
+					font-size: @base-fontsize * 1.2;
+					font-weight: bold;
+					text-align: center;
+					border-bottom: solid 1px black;
+					color: black;
+				}
 
-                    p {
-                        margin-bottom: 0;
-                    }
-                }
+				.subLabel {
+					margin: 15px 0;
+					padding: 0 10px;
 
-                .description {
-                    padding: 10px;
-                    font-size: @base-fontsize * 0.8;
-                    color: gray;
-                    p {
-                        margin: 0;
-                    }
+					p {
+						margin-bottom: 0;
+					}
+				}
 
-                    ul {
-                        padding-left: 10px;
-                        list-style: none;
-                    }
+				.description {
+					padding: 10px;
+					font-size: @base-fontsize * 0.8;
+					color: gray;
 
-                    .submitButton {
-                        border: none;
-                        background-color: rgb(255, 54, 93);
-                        border-radius: 3px;
-                        padding: 0 15px;
-                        color: white;
-                        position: relative;
-                        left: 50%;
-                        transform: translate(-50%, 0);
-                    }
-                }
-            }
-        }
-    }
+					p {
+						margin: 0;
+					}
+
+					ul {
+						padding-left: 10px;
+						list-style: none;
+					}
+
+					.submitButton {
+						border: none;
+						background-color: rgb(255, 54, 93);
+						border-radius: 3px;
+						padding: 0 15px;
+						position: relative;
+						left: 50%;
+						transform: translate(-50%, 0);
+
+						a {
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}
 }
