@@ -1,288 +1,291 @@
 @import "../../common.less";
+@import "../../header.less";
+@import "../../footer.less";
+
 
 main {
-    min-height: 80vh;
-    font-size: @base-fontsize;
-    padding: 0 10%;
-    max-width: 1200px;
-    margin: auto;
+	min-height: 80vh;
+	font-size: @base-fontsize;
+	padding: 0 5%;
+	max-width: 1200px;
+	margin: auto;
 
-    /* === mainTitleBlock === */
-    .mainTitleBlock {
-        text-align: center;
-        margin: 30px 0;
+	/* === mainTitleBlock === */
+	.mainTitleBlock {
+		text-align: center;
+		margin: 30px 0;
 
-        /* === title === */
-        .title {
-            font-size: @base-fontsize * 2;
-            font-weight: bold;
-        }
+		/* === title === */
+		.title {
+			font-size: @base-fontsize * 2;
+			font-weight: bold;
+		}
 
-        /* === subTitle === */
-        .subTitle {
-            font-size: @base-fontsize * 1.5;
-            font-weight: bold;
-        }
-    }
+		/* === subTitle === */
+		.subTitle {
+			font-size: @base-fontsize * 1.5;
+			font-weight: bold;
+		}
+	}
 
-    /* === threeCategoryBlock === */
-    .threeCategoryBlock {
+	/* === threeCategoryBlock === */
+	.threeCategoryBlock {
 
-        /* === content === */
-        .content {
+		/* === content === */
+		.content {
 
-            /* === contentImage === */
-            .contentImage {
-                img {
-                    display: inline-block;
-                    max-width: 85%;
-                    height: 150px;
-                    object-fit: contain;
-                    position: relative;
-                    left: 50%;
-                    transform: translate(-50%, 0);
-                }
-            }
+			/* === contentImage === */
+			.contentImage {
+				img {
+					display: inline-block;
+					max-width: 85%;
+					height: 150px;
+					object-fit: contain;
+					position: relative;
+					left: 50%;
+					transform: translate(-50%, 0);
+				}
+			}
 
-            /* === contentDescription === */
-            .contentDescription {
-                padding: 20px 30px;
-            }
-        }
-    }
+			/* === contentDescription === */
+			.contentDescription {
+				padding: 20px 30px;
+			}
+		}
+	}
 
-    /* === border === */
-    .border {
-        margin: 20px 0;
-    }
+	/* === border === */
+	.border {
+		margin: 20px 0;
+	}
 
-    /* === mainContent === */
-    .mainContent {
+	/* === mainContent === */
+	.mainContent {
 
-        /* === contentTitleBlock === */
-        .contentTitleBlock {
-            margin: 30px 0;
+		/* === contentTitleBlock === */
+		.contentTitleBlock {
+			margin: 30px 0;
 
-            /* === title === */
-            .title {
-                font-size: @base-fontsize * 1.9;
-                font-weight: bold;
-                margin-bottom: 20px;
-            }
+			/* === title === */
+			.title {
+				font-size: @base-fontsize * 1.9;
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
 
-            /* === description === */
-            .description {
-                font-size: @base-fontsize * 1.2;
-                padding-left: 20px;
-            }
-        }
+			/* === description === */
+			.description {
+				font-size: @base-fontsize * 1.2;
+				padding-left: 20px;
+			}
+		}
 
-        /* === content === */
-        .content {
-            min-height: 30vh;
+		/* === content === */
+		.content {
+			min-height: 30vh;
 
-            @media @sp {
-                margin-bottom: 120px;
-            }
+			@media @sp {
+				margin-bottom: 120px;
+			}
 
-            @media @pc {
-                padding: 0 60px;
-                margin-bottom: 80px;
-            }
+			@media @pc {
+				padding: 0 60px;
+				margin-bottom: 80px;
+			}
 
-            /* === detail === */
-            .detail {
+			/* === detail === */
+			.detail {
 
-                /* === detailBlock === */
-                .detailBlock {
-                    position: relative;
-                    margin-bottom: 20px;
+				/* === detailBlock === */
+				.detailBlock {
+					position: relative;
+					margin-bottom: 20px;
 
-                    /* === detailBlock-title === */
-                    .detailBlock-title {
-                        background-color: rgb(0, 166, 186);
-                        color: white;
-                        border: solid 1px rgb(0, 166, 186);
-                        text-align: center;
-                        padding: 10px;
-                        font-size: @base-fontsize * 1.1;
-                        font-weight: bold;
-                    }
+					/* === detailBlock-title === */
+					.detailBlock-title {
+						background-color: rgb(0, 166, 186);
+						color: white;
+						border: solid 1px rgb(0, 166, 186);
+						text-align: center;
+						padding: 10px;
+						font-size: @base-fontsize * 1.1;
+						font-weight: bold;
+					}
 
-                    /* === detailBlock-detail === */
-                    .detailBlock-detail {
-                        border: solid 1px rgb(0, 166, 186);
-                        border-top: none;
-                        min-height: 140px;
+					/* === detailBlock-detail === */
+					.detailBlock-detail {
+						border: solid 1px rgb(0, 166, 186);
+						border-top: none;
+						min-height: 140px;
 
-                        .price {
-                            text-align: center;
-                            font-size: @base-fontsize * 1.5;
-                            font-weight: bold;
-                            padding: 10px;
+						.price {
+							text-align: center;
+							font-size: @base-fontsize * 1.5;
+							font-weight: bold;
+							padding: 10px;
 
-                            .pink {
-                                color: rgb(232, 82, 141);
-                            }
+							.pink {
+								color: rgb(232, 82, 141);
+							}
 
-                            .min {
-                                font-size: @base-fontsize;
-                            }
-                        }
+							.min {
+								font-size: @base-fontsize;
+							}
+						}
 
-                        .description {
-                            padding: 0 10px;
-                            color: rgb(0, 166, 186);
-                            font-size: @base-fontsize;
+						.description {
+							padding: 0 10px;
+							color: rgb(0, 166, 186);
+							font-size: @base-fontsize;
 
-                            .black {
-                                color: @black;
-                            }
-                        }
-                    }
+							.black {
+								color: @black;
+							}
+						}
+					}
 
-                    /* === icon === */
-                    .icon {
-                        position: absolute;
-                        top: 50%;
-                        left: 100%;
-                        transform: translate(-50%, -50%);
+					/* === icon === */
+					.icon {
+						position: absolute;
+						top: 50%;
+						left: 100%;
+						transform: translate(-50%, -50%);
 
-                        .outerCircle {
-                            display: inline-block;
-                            width: 30px;
-                            height: 30px;
-                            text-align: center;
-                            border-radius: 50%;
-                            background-color: rgb(0, 166, 186);
-                            position: relative;
-                            transform: translate(0, 10%);
-                            line-height: 24px;
-                            font-size: @base-fontsize * 2.3;
-                            color: white;
-                        }
-                    }
-                }
-            }
+						.outerCircle {
+							display: inline-block;
+							width: 30px;
+							height: 30px;
+							text-align: center;
+							border-radius: 50%;
+							background-color: rgb(0, 166, 186);
+							position: relative;
+							transform: translate(0, 10%);
+							line-height: 24px;
+							font-size: @base-fontsize * 2.3;
+							color: white;
+						}
+					}
+				}
+			}
 
-            /* === result === */
-            .result {
+			/* === result === */
+			.result {
 
-                /* === detailBlock === */
-                .detailBlock {
-                    position: relative;
+				/* === detailBlock === */
+				.detailBlock {
+					position: relative;
 
-                    /* === detailBlock-title === */
-                    .detailBlock-title {
-                        background-color: rgb(0, 166, 186);
-                        color: white;
-                        border: solid 1px rgb(0, 166, 186);
-                        text-align: center;
-                        padding: 10px 0;
-                        font-size: @base-fontsize * 1.3;
-                        font-weight: bold;
-                    }
+					/* === detailBlock-title === */
+					.detailBlock-title {
+						background-color: rgb(0, 166, 186);
+						color: white;
+						border: solid 1px rgb(0, 166, 186);
+						text-align: center;
+						padding: 10px 0;
+						font-size: @base-fontsize * 1.3;
+						font-weight: bold;
+					}
 
-                    /* === detailBlock-detail === */
-                    .detailBlock-detail {
-                        border: solid 1px rgb(0, 166, 186);
-                        border-top: none;
-                        min-height: 70px;
-                        position: relative;
+					/* === detailBlock-detail === */
+					.detailBlock-detail {
+						border: solid 1px rgb(0, 166, 186);
+						border-top: none;
+						min-height: 70px;
+						position: relative;
 
-                        .price {
-                            font-size: @base-fontsize * 1.8;
-                            font-weight: bold;
-                            padding: 5px 0 5px 3vw;
+						.price {
+							font-size: @base-fontsize * 1.8;
+							font-weight: bold;
+							padding: 5px 0 5px 3vw;
 
-                            @media @sp {
-                                text-align: center;
-                                padding: 5px;
-                            }
+							@media @sp {
+								text-align: center;
+								padding: 5px;
+							}
 
-                            .pink {
-                                color: rgb(232, 82, 141);
-                            }
+							.pink {
+								color: rgb(232, 82, 141);
+							}
 
-                            .min {
-                                font-size: @base-fontsize;
-                            }
-                        }
+							.min {
+								font-size: @base-fontsize;
+							}
+						}
 
-                        .description {
-                            padding: 0 10px;
-                            font-weight: bold;
-                            font-size: @base-fontsize * 1.2;
+						.description {
+							padding: 0 10px;
+							font-weight: bold;
+							font-size: @base-fontsize * 1.2;
 
-                            .black {
-                                color: @black;
-                            }
-                        }
+							.black {
+								color: @black;
+							}
+						}
 
-                        .icon {
-                            position: absolute;
-                            top: 50%;
-                            left: 0;
-                            transform: translate(-150%, -50%);
-                            color: rgb(232, 82, 141);
-                        }
+						.icon {
+							position: absolute;
+							top: 50%;
+							left: 0;
+							transform: translate(-150%, -50%);
+							color: rgb(232, 82, 141);
+						}
 
-                        .mention {
-                            display: inline-block;
-                            width: 150px;
-                            position: absolute;
-                            top: 30%;
-                            left: 90%;
+						.mention {
+							display: inline-block;
+							width: 150px;
+							position: absolute;
+							top: 30%;
+							left: 90%;
 
-                            @media @sp {
-                                left: 50%;
-                                top: 90%;
-                            }
+							@media @sp {
+								left: 50%;
+								top: 90%;
+							}
 
-                            background-color: rgb(255, 213, 0);
-                            padding: 5px;
-                            border: solid 1px rgb(0, 166, 186);
-                            color: rgb(0, 166, 186);
-                            font-weight: bold;
-                            font-size: @base-fontsize;
-                        }
-                    }
-                }
-            }
-        }
+							background-color: rgb(255, 213, 0);
+							padding: 5px;
+							border: solid 1px rgb(0, 166, 186);
+							color: rgb(0, 166, 186);
+							font-weight: bold;
+							font-size: @base-fontsize;
+						}
+					}
+				}
+			}
+		}
 
-        /* === comment === */
-        .comment {
-            padding: 0 5vw;
-            color: @black;
+		/* === comment === */
+		.comment {
+			padding: 0 5vw;
+			color: @black;
 
-            p {
-                padding-left: 10px;
-                margin-bottom: 0;
-            }
+			p {
+				padding-left: 10px;
+				margin-bottom: 0;
+			}
 
-            a {
-                color: @link-color;
-            }
-        }
+			a {
+				color: @link-color;
+			}
+		}
 
-        /* === link === */
-        .link {
-            text-align: center;
-            padding: 30px 0;
+		/* === link === */
+		.link {
+			text-align: center;
+			padding: 30px 0;
 
-            .linkButton {
-                border: none;
-                background-color: rgb(232, 82, 141);
-                font-size: @base-fontsize * 1.3;
-                margin: 0 5vw 10px;
-                padding: 3px 15px;
-                border-radius: 5px;
+			.linkButton {
+				border: none;
+				background-color: rgb(232, 82, 141);
+				font-size: @base-fontsize * 1.3;
+				margin: 0 5vw 10px;
+				padding: 3px 15px;
+				border-radius: 5px;
 
-                a {
-                    color: white;
-                }
-            }
-        }
-    }
+				a {
+					color: white;
+				}
+			}
+		}
+	}
 }

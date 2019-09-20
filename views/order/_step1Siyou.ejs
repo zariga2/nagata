@@ -8,7 +8,10 @@
         <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
         <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- === less === -->
         <link rel="stylesheet/less" href="/src/less/order/_step1Siyou.less" />
+        <script src="/lib/less/less.min.js"></script>
     </head>
     <body>
         <!-- === header === -->
@@ -35,10 +38,16 @@
                                 <div class="description">
                                     <div class="images">
                                         <div class="imageContent">
-                                            <img src="" alt="" />
+                                            <img
+                                                src="/src/images/order/step1Siyou/pic1.png"
+                                                alt=""
+                                            />
                                         </div>
                                         <div class="imageContent">
-                                            <img src="" alt="" />
+                                            <img
+                                                src="/src/images/order/step1Siyou/pic2.png"
+                                                alt=""
+                                            />
                                         </div>
                                     </div>
                                     <p>
@@ -230,7 +239,11 @@
                                             製品は消耗品となり、お客様の扱い方法などで利用期間は変わります。
                                         </li>
                                     </ul>
-                                    <button class="submitButton">続ける</button>
+                                    <button class="submitButton">
+                                        <a href="/order/step2Haisousaki"
+                                            >続ける</a
+                                        >
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +254,5 @@
 
         <!-- === footer === -->
         <%- include('../footer') %>
-
-        <script src="/lib/less/less.min.js"></script>
     </body>
 </html>

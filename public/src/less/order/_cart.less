@@ -1,110 +1,116 @@
 @import "../common.less";
+@import "../header.less";
+@import "../footer.less";
+@import "./main1FirstHeader.less";
 
 main {
-    max-width: 800px;
-    margin: auto;
-    padding: 0 20px;
-    font-size: @base-fontsize;
-    min-height: 80vh;
+	max-width: 800px;
+	margin: auto;
+	padding: 0 20px 10vh;
+	font-size: @base-fontsize;
+	min-height: 80vh;
 
-    /* === cart === */
-    .cart {
-        /* === title : お買い物籠 === */
-        .title {
-            border-bottom: solid 1px rgb(200, 200, 200);
-            font-size: @base-fontsize * 1.2;
+	/* === cart === */
+	.cart {
 
-            .mainTitle {
-                font-size: @base-fontsize * 1.5;
-                font-weight: bold;
-            }
-        }
+		/* === title : お買い物籠 === */
+		.title {
+			border-bottom: solid 1px rgb(200, 200, 200);
+			font-size: @base-fontsize * 1.2;
 
-        /* === cartContent : 購入商品 === */
-        .cartContent {
-            padding: 20px 10px;
-            display: flex;
-            border-bottom: solid 1px rgb(220, 220, 220);
+			.mainTitle {
+				font-size: @base-fontsize * 1.5;
+				font-weight: bold;
+			}
+		}
 
-            .image {
-                display: inline-block;
-                width: 130px;
-                min-height: 100px;
+		/* === cartContent : 購入商品 === */
+		.cartContent {
+			padding: 20px 10px;
+			display: flex;
+			border-bottom: solid 1px rgb(220, 220, 220);
 
-                img {
-                    display: inline-block;
-                    width: 80%;
-                    background-color: rgb(220, 220, 220);
-                    height: 90%;
-                    position: relative;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
+			.image {
+				display: inline-block;
+				width: 130px;
+				min-height: 100px;
 
-            .detail {
-                flex: 1;
+				img {
+					display: inline-block;
+					width: 80%;
+					background-color: rgb(220, 220, 220);
+					height: 90%;
+					position: relative;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
 
-                .productDetail {
-                    border-bottom: solid 1px rgb(220, 220, 220);
-                    padding: 10px 0;
-                }
+			.detail {
+				flex: 1;
 
-                .deliveryMessage {
-                    padding: 10px 0;
+				.productDetail {
+					border-bottom: solid 1px rgb(220, 220, 220);
+					padding: 10px 0;
+				}
 
-                    button {
-                        padding: 0 10px;
-                        border: none;
-                        color: rgb(43, 97, 247);
-                        background-color: white;
-                    }
-                }
-            }
-        }
+				.deliveryMessage {
+					padding: 10px 0;
 
-        /* === result === */
-        .result {
-            float: right;
-            position: relative;
-            padding: 10px;
+					button {
+						padding: 0 10px;
+						border: none;
+						color: rgb(43, 97, 247);
+						background-color: white;
+					}
+				}
+			}
+		}
 
-            /* === resultDetail === */
-            .resultDetail {
-                display: inline-block;
-                position: relative;
-                left: 100%;
-                transform: translate(-100%, 0);
-            }
+		/* === result === */
+		.resultBlock {
+			padding: 10px;
 
-            /* === border === */
-            .border {
-                min-width: 250px;
-            }
+			/* === detailBlock === */
+			.detailBlock {
 
-            /* === total : 合計 === */
-            .total {
-                text-align: right;
-                font-weight: bold;
-                font-size: @base-fontsize * 1.3;
-                padding: 10px 0;
-            }
+				/* === resultDetail === */
+				.resultDetail {
+					display: inline-block;
+					position: relative;
+					left: 100%;
+					transform: translate(-100%, 0);
+				}
 
-            /* === submit : 購入手続きへ === */
-            .submit {
-                text-align: right;
+				/* === border === */
+				.border {
+					min-width: 250px;
+				}
 
-                .submitButton {
-                    text-align: center;
-                    padding: 4px 20px;
-                    background-color: @submitbutton-color;
-                    border: solid 1px rgb(220, 220, 220);
-                    color: white;
-                    border-radius: 3px;
-                    font-size: @base-fontsize * 1.3;
-                }
-            }
-        }
-    }
+				/* === total : 合計 === */
+				.total {
+					text-align: right;
+					font-weight: bold;
+					font-size: @base-fontsize * 1.3;
+					padding: 10px 0;
+				}
+
+				/* === submit : 購入手続きへ === */
+				.submit {
+					text-align: right;
+
+					.submitButton {
+						text-align: center;
+						padding: 4px 20px;
+						background-color: @submitbutton-color;
+						border: solid 1px rgb(220, 220, 220);
+						color: white;
+						border-radius: 3px;
+						font-size: @base-fontsize * 1.3;
+					}
+				}
+			}
+		}
+	}
 }

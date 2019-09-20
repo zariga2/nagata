@@ -2,15 +2,34 @@
 
 .nav-link,
 .btn {
-    font-size: @base-fontsize;
+	font-size: @base-fontsize;
 }
 
 .orderBlock {
-    .orderBtn {
-        background-color: @pink;
-        border: solid 1px @pink;
-        color: white;
-    }
-    .cartBtn {
-    }
+	.orderBtn {
+		background-color: @pink;
+		border: solid 1px @pink;
+		color: white;
+	}
+
+	.cartBtn {}
+}
+
+
+.headerLogo {
+	display: inline-block;
+	height: 40px;
+	position: relative;
+
+	a {
+		display: inline-block;
+		height: 40px;
+		line-height: 0px;
+
+		img {
+			display: inline-block;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 }

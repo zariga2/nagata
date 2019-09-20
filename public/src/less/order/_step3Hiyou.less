@@ -1,70 +1,78 @@
 @import "../common.less";
+@import "../header.less";
+@import "../footer.less";
+@import "./main1FirstHeader.less";
+@import "./main2SecondHeader.less";
 
 main {
-    font-size: @base-fontsize;
-    padding: 0 10%;
+	font-size: @base-fontsize;
+	padding: 0 10%;
 
-    /* === mainContents === */
-    .mainContents {
-        margin: 30px 0;
+	/* === mainContents === */
+	.mainContents {
+		margin: 30px 0;
 
-        /* === leftSide === */
-        .leftSide {
-            font-weight: bold;
-            .container {
-                margin-bottom: 15px;
-            }
-        }
+		/* === leftSide === */
+		.leftSide {
+			font-weight: bold;
 
-        /* === rightSide === */
-        .rightSide {
-            padding: 0;
-            border: solid 1px rgb(225, 225, 225);
-            border-radius: 3px;
-            font-weight: bold;
+			.container {
+				margin-bottom: 15px;
+			}
+		}
 
-            .title {
-                background-color: rgba(202, 202, 202, 0.541);
-                text-align: center;
-                border-radius: 3px 3px 0 0;
-                font-weight: normal;
-            }
+		/* === rightSide === */
+		.rightSide {
+			padding: 0;
+			border: solid 1px rgb(225, 225, 225);
+			border-radius: 3px;
+			font-weight: bold;
 
-            .detail {
-                padding: 10px 20px;
-                p {
-                    margin-bottom: 0;
-                }
+			.title {
+				background-color: rgba(202, 202, 202, 0.541);
+				text-align: center;
+				border-radius: 3px 3px 0 0;
+				font-weight: normal;
+				padding: 3px 10px;
+			}
 
-                .result {
-                    text-align: right;
-                }
-            }
-        }
+			.detail {
+				padding: 10px 20px;
 
-        /* === submitButton === */
-        .submit {
-            padding: 30px 0;
-            text-align: center;
+				p {
+					margin-bottom: 0;
+				}
 
-            .submitButton {
-                padding: 0 10px;
-                background-color: rgb(15, 123, 209);
-                border: solid 1px rgb(225, 225, 225);
-                border-radius: 4px;
-                color: white;
-                padding: 5px 30px;
-                font-size: @base-fontsize * 1.4;
-            }
-        }
+				.result {
+					text-align: right;
+				}
+			}
+		}
 
-        .notice {
-            display: inline-block;
-            list-style: disc;
-            position: relative;
-            left: 50%;
-            transform: translate(-50%, 0);
-            font-size: @base-fontsize * 0.8;
-        }
-    }
+		/* === submitButton === */
+		.submit {
+			padding: 30px 0;
+			text-align: center;
+
+			.submitButton {
+				padding: 0 10px;
+				background-color: rgb(15, 123, 209);
+				border: solid 1px rgb(225, 225, 225);
+				border-radius: 4px;
+				color: white;
+				padding: 5px 30px;
+				font-size: @base-fontsize * 1.4;
+			}
+		}
+
+		.notice {
+			display: inline-block;
+			list-style: disc;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+			font-size: @base-fontsize * 0.8;
+
+		}
+	}
 }

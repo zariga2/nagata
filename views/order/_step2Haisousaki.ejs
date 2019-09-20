@@ -14,6 +14,7 @@
             rel="stylesheet/less"
             href="/src/less/order/_step2Haisousaki.less"
         />
+        <script src="/lib/less/less.min.js"></script>
     </head>
     <body>
         <!-- === header === -->
@@ -30,10 +31,8 @@
             <div class="mainContents">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-2"></div>
-
                         <!-- === leftSide === -->
-                        <div class="col-lg-4 leftSide">
+                        <div class="col-lg-6 leftSide">
                             <div class="title">配送先を入力</div>
                             <div class="container">
                                 <!-- === 性・名 === -->
@@ -143,7 +142,7 @@
                         </div>
 
                         <!-- === rightSide === -->
-                        <div class="col-lg-4 rightSide">
+                        <div class="col-lg-6 rightSide">
                             <div class="title">支払い方法を選択</div>
                             <div class="radioLists">
                                 <!-- === 現金振り込み === -->
@@ -178,20 +177,18 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-2"></div>
                     </div>
                 </div>
 
                 <div class="submitButton">
-                    <button>注文内容の確認</button>
+                    <button>
+                        <a href="/order/step3Hiyou">注文内容の確認</a>
+                    </button>
                 </div>
             </div>
         </main>
 
         <!-- === footer === -->
         <%- include('../footer') %>
-
-        <script src="/lib/less/less.min.js"></script>
     </body>
 </html>

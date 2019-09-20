@@ -1,9 +1,21 @@
-footer {
-    color: white;
-    background-color: #34445c;
-    font-size: 11px;
+@import './common.less';
 
-    li {
-        list-style: none;
-    }
+footer {
+	color: white;
+	background-color: #34445c;
+	font-size: @base-fontsize * 0.8;
+
+	.text-uppercase {
+		a {
+			color: white;
+		}
+	}
+
+	li {
+		list-style: none;
+
+		@media @pc {
+			padding-left: 15px;
+		}
+	}
 }

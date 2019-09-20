@@ -19,6 +19,7 @@ app.use("/order", order);
 let contents = require("./routes/_contents.js");
 app.use("/contents", contents);
 
-let server = http.createServer(app);
-server.listen("3000");
-console.log("サーバーを起動しました");
+const port = process.env.PORT || 3000;
+const server = http.createServer(app);
+server.listen(port);
+console.log(`created server : ${port}`);

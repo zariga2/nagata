@@ -7,6 +7,12 @@
 @sp: ~"(max-width: @{sp-only-max})";
 @pc: ~"(min-width: @{pc-only-min})";
 
+
+@sm: ~"(max-width: 576px)";
+@md: ~"(max-width: 768px)";
+@lg: ~"(max-width: 992px)";
+@xl: ~"(max-width: 1200px)";
+
 /* === 変数 === */
 @base-fontsize : 15.5px;
 @black : #343a40;
@@ -19,17 +25,17 @@
 
 //	使い方
 @media @sp {
-    //	ここにスタイルを記述でスマホ、タブレット時のスタイルを指定できる
+	//	ここにスタイルを記述でスマホ、タブレット時のスタイルを指定できる
 }
 
 /* === 基本スタイル === */
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    line-height: 200%;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	line-height: 200%;
 }
 
 a {
-    color: @black;
+	color: @black;
 }
