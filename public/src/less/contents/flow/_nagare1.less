@@ -1,222 +1,226 @@
 @import "../../common.less";
+@import "../../header.less";
+@import "../../footer.less";
+@import "./main1FirstHeader.less";
+
 
 main {
-    min-height: 80vh;
-    font-size: @base-fontsize;
-    padding: 30px;
-    max-width: 1200px;
-    margin: auto;
+	min-height: 80vh;
+	font-size: @base-fontsize;
+	padding: 30px;
+	max-width: 1200px;
+	margin: auto;
 
-    /* === contents === */
-    .contents {
+	/* === contents === */
+	.contents {
 
-        /* === titleBlock === */
-        .titleBlock {
-            margin: 30px 0;
+		/* === titleBlock === */
+		.titleBlock {
+			margin: 30px 0;
 
-            .mainTitle {
-                font-size: @base-fontsize * 1.8;
-                font-weight: bold;
-            }
+			.mainTitle {
+				font-size: @base-fontsize * 1.8;
+				font-weight: bold;
+			}
 
-            .titleDescription {}
-        }
+			.titleDescription {}
+		}
 
-        /* === contentTimeLine === */
-        .contentTimeLines {
-            padding: 0 20px;
+		/* === contentTimeLine === */
+		.contentTimeLines {
+			padding: 0 20px;
 
-            /* === ● contentTimeLineCircle === */
-            .contentTimeLineCircle {
+			/* === ● contentTimeLineCircle === */
+			.contentTimeLineCircle {
 
-                /* === leftSideBlock === */
-                .leftSideBlock {}
+				/* === leftSideBlock === */
+				.leftSideBlock {}
 
-                /* === centerLineBlock === */
-                .centerLineBlock {
-                    text-align: center;
+				/* === centerLineBlock === */
+				.centerLineBlock {
+					text-align: center;
 
-                    .circleBlock {
-                        .outerCircle {
-                            display: inline-block;
-                            width: 2vw;
-                            height: 2vw;
-                            text-align: center;
-                            border-radius: 50%;
-                            border: solid 1px rgb(220, 220, 220);
-                            position: relative;
-                            transform: translate(0, 10%);
+					.circleBlock {
+						.outerCircle {
+							display: inline-block;
+							width: 2vw;
+							height: 2vw;
+							text-align: center;
+							border-radius: 50%;
+							border: solid 1px rgb(220, 220, 220);
+							position: relative;
+							transform: translate(0, 10%);
 
-                            .innerCircle {
-                                width: 1vw;
-                                height: 1vw;
-                                border-radius: 50%;
-                                background: rgb(219, 110, 37);
-                                /*背景色*/
+							.innerCircle {
+								width: 1vw;
+								height: 1vw;
+								border-radius: 50%;
+								background: rgb(219, 110, 37);
+								/*背景色*/
 
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                            }
-                        }
-                    }
-                }
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+							}
+						}
+					}
+				}
 
-                /* === rightSideBlock === */
-                .rightSideBlock {}
-            }
+				/* === rightSideBlock === */
+				.rightSideBlock {}
+			}
 
-            /* === ■ contentTimeLineContent === */
-            .contentTimeLineContent {
+			/* === ■ contentTimeLineContent === */
+			.contentTimeLineContent {
 
-                /* === leftSideBlock === */
-                .imageSideBlock {
-                    min-height: 30vh;
+				/* === leftSideBlock === */
+				.imageSideBlock {
+					min-height: 30vh;
 
-                    .content {
-                        display: inline-block;
-                        width: 80%;
-                        position: relative;
-                        left: 50%;
-                        top: 0;
-                        transform: translate(-50%, 5%);
+					.content {
+						display: inline-block;
+						width: 80%;
+						position: relative;
+						left: 50%;
+						top: 0;
+						transform: translate(-50%, 5%);
 
-                        img {
-                            max-width: 100%;
-                            max-height: 100%;
-                            display: inline-block;
-                        }
-                    }
-                }
+						img {
+							max-width: 100%;
+							max-height: 100%;
+							display: inline-block;
+						}
+					}
+				}
 
-                /* === centerLineBlock === */
-                .centerLineBlock {
-                    text-align: center;
+				/* === centerLineBlock === */
+				.centerLineBlock {
+					text-align: center;
 
-                    .centerLine {
-                        display: inline-block;
-                        min-width: 2px;
-                        height: 100%;
-                        background-color: rgb(220, 220, 220);
-                    }
-                }
+					.centerLine {
+						display: inline-block;
+						min-width: 2px;
+						height: 100%;
+						background-color: rgb(220, 220, 220);
+					}
+				}
 
-                /* === rightSideBlock === */
-                .descriptionSideBlock {
-                    min-height: 30vh;
-                    padding: 0 0 100px;
+				/* === rightSideBlock === */
+				.descriptionSideBlock {
+					min-height: 30vh;
+					padding: 0 0 100px;
 
-                    .title {
-                        font-size: @base-fontsize * 1.5;
-                        font-weight: bold;
-                    }
+					.title {
+						font-size: @base-fontsize * 1.5;
+						font-weight: bold;
+					}
 
-                    .description {
-                        a {
-                            color: @link-color;
-                        }
-                    }
-                }
-            }
-        }
+					.description {
+						a {
+							color: @link-color;
+						}
+					}
+				}
+			}
+		}
 
-        /* === border === */
-        .border {
-            margin: 30px 0;
-        }
+		/* === border === */
+		.border {
+			margin: 30px 0;
+		}
 
-        /* === questions === */
-        .questions {
-            @media @pc {
-                padding: 0 50px;
-            }
+		/* === questions === */
+		.questions {
+			@media @pc {
+				padding: 0 50px;
+			}
 
-            /* === title === */
-            .title {
-                font-size: @base-fontsize * 1.5;
-            }
+			/* === title === */
+			.title {
+				font-size: @base-fontsize * 1.5;
+			}
 
-            /* === question === */
-            .question {
-                margin: 20px 0;
+			/* === question === */
+			.question {
+				margin: 20px 0;
 
-                .questionTitle {
-                    margin-bottom: 5px;
-                }
+				.questionTitle {
+					margin-bottom: 5px;
+				}
 
-                .answer {
-                    padding-left: 20px;
+				.answer {
+					padding-left: 20px;
 
-                    .blue {
-                        color: @link-color;
-                    }
-                }
-            }
+					.blue {
+						color: @link-color;
+					}
+				}
+			}
 
-            /* === contactLink === */
-            .contactLink {
-                text-align: right;
+			/* === contactLink === */
+			.contactLink {
+				text-align: right;
 
-                a {
-                    color: @link-color;
-                }
-            }
-        }
+				a {
+					color: @link-color;
+				}
+			}
+		}
 
-        /* === PerfectSkinBlock === */
-        .PerfectSkinBlock {
+		/* === PerfectSkinBlock === */
+		.PerfectSkinBlock {
 
-            /* === titleBlock === */
-            .titleBlock {
-                text-align: center;
+			/* === titleBlock === */
+			.titleBlock {
+				text-align: center;
 
-                .title {
-                    font-size: @base-fontsize * 2;
-                    font-weight: bold;
-                }
+				.title {
+					font-size: @base-fontsize * 2;
+					font-weight: bold;
+				}
 
-                .description {
-                    font-size: @base-fontsize * 1.4;
-                }
-            }
+				.description {
+					font-size: @base-fontsize * 1.4;
+				}
+			}
 
-            /* === contents === */
-            .contents {
+			/* === contents === */
+			.contents {
 
-                /* === content === */
-                .content {
-                    padding: 20px;
+				/* === content === */
+				.content {
+					padding: 20px;
 
-                    /* === contentImage === */
-                    .contentImage {
-                        margin-bottom: 20px;
+					/* === contentImage === */
+					.contentImage {
+						margin-bottom: 20px;
 
-                        img {
-                            display: inline-block;
-                            max-width: 80%;
-                            position: relative;
-                            left: 50%;
-                            transform: translate(-50%, 0);
-                        }
-                    }
+						img {
+							display: inline-block;
+							max-width: 80%;
+							position: relative;
+							left: 50%;
+							transform: translate(-50%, 0);
+						}
+					}
 
-                    /* === contentDescription === */
-                    .contentDescription {
-                        font-size: @base-fontsize * 1.2;
-                        margin-bottom: 30px;
-                    }
+					/* === contentDescription === */
+					.contentDescription {
+						font-size: @base-fontsize * 1.2;
+						margin-bottom: 30px;
+					}
 
-                    /* === contentLink === */
-                    .contentLink {
-                        text-align: right;
+					/* === contentLink === */
+					.contentLink {
+						text-align: right;
 
-                        a {
-                            color: @link-color;
-                        }
-                    }
-                }
-            }
-        }
-    }
+						a {
+							color: @link-color;
+						}
+					}
+				}
+			}
+		}
+	}
 }

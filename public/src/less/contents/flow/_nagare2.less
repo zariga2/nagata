@@ -1,206 +1,225 @@
 @import "../../common.less";
+@import "../../header.less";
+@import "../../footer.less";
+@import "./main1FirstHeader.less";
 
 main {
-    min-height: 80vh;
-    font-size: @base-fontsize;
-    padding: 30px;
-    max-width: 1200px;
-    margin: auto;
+	min-height: 80vh;
+	font-size: @base-fontsize;
+	padding: 30px;
+	max-width: 1200px;
+	margin: auto;
 
-    /* === contents === */
-    .contents {
-        /* === titleBlock === */
-        .titleBlock {
-            margin: 30px 0;
+	/* === contents === */
+	.contents {
 
-            .mainTitle {
-                font-size: @base-fontsize * 1.8;
-                font-weight: bold;
-            }
+		/* === titleBlock === */
+		.titleBlock {
+			margin: 30px 0;
 
-            .titleDescription {
-            }
-        }
+			.mainTitle {
+				font-size: @base-fontsize * 1.8;
+				font-weight: bold;
+			}
 
-        /* === contentTimeLine === */
-        .contentTimeLines {
-            padding: 0 20px;
+			.titleDescription {}
+		}
 
-            /* === ● contentTimeLineCircle === */
-            .contentTimeLineCircle {
-                /* === leftSideBlock === */
-                .leftSideBlock {
-                }
-                /* === centerLineBlock === */
-                .centerLineBlock {
-                    text-align: center;
+		/* === contentTimeLine === */
+		.contentTimeLines {
+			padding: 0 20px;
 
-                    .circleBlock {
-                        .outerCircle {
-                            display: inline-block;
-                            width: 2vw;
-                            height: 2vw;
-                            text-align: center;
-                            border-radius: 50%;
-                            border: solid 1px rgb(220, 220, 220);
-                            position: relative;
-                            transform: translate(0, 10%);
+			/* === ● contentTimeLineCircle === */
+			.contentTimeLineCircle {
 
-                            .innerCircle {
-                                width: 1vw;
-                                height: 1vw;
-                                border-radius: 50%;
-                                background: rgb(219, 110, 37); /*背景色*/
+				/* === leftSideBlock === */
+				.leftSideBlock {}
 
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                            }
-                        }
-                    }
-                }
-                /* === rightSideBlock === */
-                .rightSideBlock {
-                }
-            }
+				/* === centerLineBlock === */
+				.centerLineBlock {
+					text-align: center;
 
-            /* === ■ contentTimeLineContent === */
-            .contentTimeLineContent {
-                /* === leftSideBlock === */
-                .imageSideBlock {
-                    min-height: 30vh;
+					.circleBlock {
+						.outerCircle {
+							display: inline-block;
+							width: 2vw;
+							height: 2vw;
+							text-align: center;
+							border-radius: 50%;
+							border: solid 1px rgb(220, 220, 220);
+							position: relative;
+							transform: translate(0, 10%);
 
-                    .content {
-                        display: inline-block;
-                        width: 80%;
-                        position: relative;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
+							.innerCircle {
+								width: 1vw;
+								height: 1vw;
+								border-radius: 50%;
+								background: rgb(219, 110, 37);
+								/*背景色*/
 
-                        img {
-                            max-width: 100%;
-                            max-height: 100%;
-                            display: inline-block;
-                        }
-                    }
-                }
-                /* === centerLineBlock === */
-                .centerLineBlock {
-                    text-align: center;
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+							}
+						}
+					}
+				}
 
-                    .centerLine {
-                        display: inline-block;
-                        min-width: 2px;
-                        height: 100%;
-                        background-color: rgb(220, 220, 220);
-                    }
-                }
-                /* === rightSideBlock === */
-                .descriptionSideBlock {
-                    min-height: 30vh;
-                    padding: 20px 0;
+				/* === rightSideBlock === */
+				.rightSideBlock {}
+			}
 
-                    .title {
-                        font-size: @base-fontsize * 1.5;
-                        font-weight: bold;
-                    }
+			/* === ■ contentTimeLineContent === */
+			.contentTimeLineContent {
 
-                    .description {
-                        a {
-                            color: #0000ff;
-                        }
-                    }
-                }
-            }
-        }
+				/* === leftSideBlock === */
+				.imageSideBlock {
+					min-height: 30vh;
 
-        /* === border === */
-        .border {
-            margin: 30px 0;
-        }
+					.content {
+						display: inline-block;
+						width: 80%;
+						position: relative;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
 
-        /* === questions === */
-        .questions {
-            @media @pc {
-                padding: 0 50px;
-            }
-            /* === title === */
-            .title {
-                font-size: @base-fontsize * 1.5;
-            }
+						img {
+							max-width: 100%;
+							max-height: 100%;
+							display: inline-block;
+						}
+					}
+				}
 
-            /* === question === */
-            .question {
-                margin: 20px 0;
-                .questionTitle {
-                    margin-bottom: 5px;
-                }
-                .answer {
-                    padding-left: 20px;
-                    .blue {
-                        color: #0000ff;
-                    }
-                }
-            }
+				/* === centerLineBlock === */
+				.centerLineBlock {
+					text-align: center;
 
-            /* === contactLink === */
-            .contactLink {
-                text-align: right;
-                a {
-                    color: #0000ff;
-                }
-            }
-        }
+					.centerLine {
+						display: inline-block;
+						min-width: 2px;
+						height: 100%;
+						background-color: rgb(220, 220, 220);
+					}
+				}
 
-        /* === PerfectSkinBlock === */
-        .PerfectSkinBlock {
-            /* === titleBlock === */
-            .titleBlock {
-                text-align: center;
-                .title {
-                    font-size: @base-fontsize * 2;
-                    font-weight: bold;
-                }
-                .description {
-                    font-size: @base-fontsize * 1.4;
-                }
-            }
+				/* === rightSideBlock === */
+				.descriptionSideBlock {
+					min-height: 30vh;
+					padding: 20px 0;
 
-            /* === contents === */
-            .contents {
-                /* === content === */
-                .content {
-                    padding: 20px;
+					.title {
+						font-size: @base-fontsize * 1.5;
+						font-weight: bold;
+					}
 
-                    /* === contentImage === */
-                    .contentImage {
-                        margin-bottom: 20px;
-                        img {
-                            display: inline-block;
-                            max-width: 80%;
-                            position: relative;
-                            left: 50%;
-                            transform: translate(-50%, 0);
-                        }
-                    }
+					.description {
+						a {
+							color: #0000ff;
+						}
+					}
+				}
+			}
+		}
 
-                    /* === contentDescription === */
-                    .contentDescription {
-                        font-size: @base-fontsize * 1.2;
-                        margin-bottom: 30px;
-                    }
+		/* === border === */
+		.border {
+			margin: 30px 0;
+		}
 
-                    /* === contentLink === */
-                    .contentLink {
-                        text-align: right;
-                        a {
-                            color: #0000ff;
-                        }
-                    }
-                }
-            }
-        }
-    }
+		/* === questions === */
+		.questions {
+			@media @pc {
+				padding: 0 50px;
+			}
+
+			/* === title === */
+			.title {
+				font-size: @base-fontsize * 1.5;
+			}
+
+			/* === question === */
+			.question {
+				margin: 20px 0;
+
+				.questionTitle {
+					margin-bottom: 5px;
+				}
+
+				.answer {
+					padding-left: 20px;
+
+					.blue {
+						color: #0000ff;
+					}
+				}
+			}
+
+			/* === contactLink === */
+			.contactLink {
+				text-align: right;
+
+				a {
+					color: #0000ff;
+				}
+			}
+		}
+
+		/* === PerfectSkinBlock === */
+		.PerfectSkinBlock {
+
+			/* === titleBlock === */
+			.titleBlock {
+				text-align: center;
+
+				.title {
+					font-size: @base-fontsize * 2;
+					font-weight: bold;
+				}
+
+				.description {
+					font-size: @base-fontsize * 1.4;
+				}
+			}
+
+			/* === contents === */
+			.contents {
+
+				/* === content === */
+				.content {
+					padding: 20px;
+
+					/* === contentImage === */
+					.contentImage {
+						margin-bottom: 20px;
+
+						img {
+							display: inline-block;
+							max-width: 80%;
+							position: relative;
+							left: 50%;
+							transform: translate(-50%, 0);
+						}
+					}
+
+					/* === contentDescription === */
+					.contentDescription {
+						font-size: @base-fontsize * 1.2;
+						margin-bottom: 30px;
+					}
+
+					/* === contentLink === */
+					.contentLink {
+						text-align: right;
+
+						a {
+							color: #0000ff;
+						}
+					}
+				}
+			}
+		}
+	}
 }

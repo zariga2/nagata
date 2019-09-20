@@ -1,297 +1,300 @@
 @import "../../common.less";
+@import "../../header.less";
+@import "../../footer.less";
+@import "./main1FirstHeader.less";
 
 main {
-    font-size: @base-fontsize;
-    max-width: 1200px;
-    margin: auto;
+	font-size: @base-fontsize;
+	max-width: 1200px;
+	margin: auto;
 
-    /* === container === */
-    .container {
+	/* === container === */
+	.container {
 
-        /* === topTitleBlock === */
-        .topTitleBlock {
-            margin-bottom: 30px;
+		/* === topTitleBlock === */
+		.topTitleBlock {
+			margin-bottom: 30px;
 
-            /* === titleBlock === */
-            .titleBlock {
-                display: flex;
-                margin-bottom: 20px;
+			/* === titleBlock === */
+			.titleBlock {
+				display: flex;
+				margin-bottom: 20px;
 
-                .icon {
-                    display: inline-block;
-                    width: 50px;
-                    height: 50px;
-                    position: relative;
-                    margin-right: 20px;
+				.icon {
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					position: relative;
+					margin-right: 20px;
 
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        position: relative;
-                        top: 50%;
-                        left: 50%;
-                        object-fit: contain;
-                        transform: translate(-50%, -25%);
-                    }
-                }
+					img {
+						width: 100%;
+						height: 100%;
+						position: relative;
+						top: 50%;
+						left: 50%;
+						object-fit: contain;
+						transform: translate(-50%, -25%);
+					}
+				}
 
-                .title {
-                    flex: 1;
-                    font-size: @base-fontsize * 1.5;
-                }
-            }
+				.title {
+					flex: 1;
+					font-size: @base-fontsize * 1.5;
+				}
+			}
 
-            /* === description === */
-            .description {
-                font-size: @base-fontsize * 1.3;
-                padding-left: 10px;
+			/* === description === */
+			.description {
+				font-size: @base-fontsize * 1.3;
+				padding-left: 10px;
 
-                a {
-                    color: @link-color;
-                }
-            }
-        }
+				a {
+					color: @link-color;
+				}
+			}
+		}
 
-        /* === border === */
-        .border {
-            margin-bottom: 30px;
-        }
+		/* === border === */
+		.border {
+			margin-bottom: 30px;
+		}
 
-        /* === firstContentBlock === */
-        .firstContentBlock {
-            margin-bottom: 30px;
+		/* === firstContentBlock === */
+		.firstContentBlock {
+			margin-bottom: 30px;
 
-            .step123Block {
-                margin-bottom: 30px;
+			.step123Block {
+				margin-bottom: 30px;
 
-                /* === titleBlock === */
-                .titleBlock {
-                    display: flex;
-                    margin-bottom: 5px;
+				/* === titleBlock === */
+				.titleBlock {
+					display: flex;
+					margin-bottom: 5px;
 
-                    .icon {
-                        display: inline-block;
-                        width: 50px;
-                        height: 50px;
-                        position: relative;
-                        margin-right: 20px;
+					.icon {
+						display: inline-block;
+						width: 50px;
+						height: 50px;
+						position: relative;
+						margin-right: 20px;
 
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            position: relative;
-                            top: 50%;
-                            left: 50%;
-                            object-fit: contain;
-                            transform: translate(-50%, -30%);
-                        }
-                    }
+						img {
+							width: 100%;
+							height: 100%;
+							position: relative;
+							top: 50%;
+							left: 50%;
+							object-fit: contain;
+							transform: translate(-50%, -30%);
+						}
+					}
 
-                    .title {
-                        flex: 1;
-                        font-size: @base-fontsize * 1.5;
-                    }
-                }
+					.title {
+						flex: 1;
+						font-size: @base-fontsize * 1.5;
+					}
+				}
 
-                /* === description === */
-                .description {
-                    @media @pc {
-                        padding-left: 70px;
-                    }
+				/* === description === */
+				.description {
+					@media @pc {
+						padding-left: 70px;
+					}
 
-                    a {
-                        color: @link-color;
-                    }
-                }
+					a {
+						color: @link-color;
+					}
+				}
 
-                .detail {
-                    @media @pc {
-                        padding: 0 40px;
-                    }
+				.detail {
+					@media @pc {
+						padding: 0 40px;
+					}
 
-                    .description {
-                        font-size: @base-fontsize * 1.3;
-                        padding-left: 10px;
+					.description {
+						font-size: @base-fontsize * 1.3;
+						padding-left: 10px;
 
-                        .attention {
-                            font-size: @base-fontsize;
+						.attention {
+							font-size: @base-fontsize;
 
-                            a {
-                                color: @link-color;
-                            }
-                        }
-                    }
-                }
+							a {
+								color: @link-color;
+							}
+						}
+					}
+				}
 
-                /* === detail === */
-                .detail {
-                    margin-top: 20px;
+				/* === detail === */
+				.detail {
+					margin-top: 20px;
 
-                    .description {
-                        @media @sp {
-                            padding: 0 20px;
-                        }
-                    }
+					.description {
+						@media @sp {
+							padding: 0 20px;
+						}
+					}
 
-                    .images {
-                        @media @sp {
-                            padding: 0 20px;
-                        }
+					.images {
+						@media @sp {
+							padding: 0 20px;
+						}
 
-                        .bgImage {
-                            margin-bottom: 10px;
+						.bgImage {
+							margin-bottom: 10px;
 
-                            @media @sp {
-                                margin-top: 10px;
-                            }
+							@media @sp {
+								margin-top: 10px;
+							}
 
-                            img {
-                                display: inline-block;
-                                width: 100%;
-                                object-fit: cover;
-                            }
-                        }
+							img {
+								display: inline-block;
+								width: 100%;
+								object-fit: cover;
+							}
+						}
 
-                        .smImages {
-                            img {
-                                display: inline-block;
-                                width: 100%;
-                                object-fit: cover;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+						.smImages {
+							img {
+								display: inline-block;
+								width: 100%;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+			}
+		}
 
-        /* === secondContentBlock === */
-        .secondContentBlock {
-            margin-bottom: 30px;
+		/* === secondContentBlock === */
+		.secondContentBlock {
+			margin-bottom: 30px;
 
-            /* === questions === */
-            .questions {
-                @media @pc {
-                    padding: 0 50px;
-                }
+			/* === questions === */
+			.questions {
+				@media @pc {
+					padding: 0 50px;
+				}
 
-                /* === title === */
-                .title {
-                    font-size: @base-fontsize * 1.5;
-                }
+				/* === title === */
+				.title {
+					font-size: @base-fontsize * 1.5;
+				}
 
-                /* === question === */
-                .question {
-                    margin: 20px 0;
+				/* === question === */
+				.question {
+					margin: 20px 0;
 
-                    .questionTitle {
-                        margin-bottom: 5px;
-                    }
+					.questionTitle {
+						margin-bottom: 5px;
+					}
 
-                    .answer {
-                        padding-left: 20px;
-                    }
-                }
+					.answer {
+						padding-left: 20px;
+					}
+				}
 
-                /* === contactLink === */
-                .contactLink {
-                    text-align: right;
+				/* === contactLink === */
+				.contactLink {
+					text-align: right;
 
-                    a {
-                        color: @link-color;
-                    }
-                }
-            }
-        }
+					a {
+						color: @link-color;
+					}
+				}
+			}
+		}
 
-        /* === thirdContentBlock === */
-        .thirdContentBlock {
-            margin-bottom: 30px;
+		/* === thirdContentBlock === */
+		.thirdContentBlock {
+			margin-bottom: 30px;
 
-            @media @pc {
-                padding: 0 50px;
-            }
+			@media @pc {
+				padding: 0 50px;
+			}
 
-            .title {
-                font-size: @base-fontsize * 1.5;
-                margin-bottom: 20px;
-            }
+			.title {
+				font-size: @base-fontsize * 1.5;
+				margin-bottom: 20px;
+			}
 
-            .description {
-                margin-bottom: 20px;
-            }
+			.description {
+				margin-bottom: 20px;
+			}
 
-            .link {
-                text-align: right;
+			.link {
+				text-align: right;
 
-                a {
-                    color: @link-color;
-                }
-            }
-        }
+				a {
+					color: @link-color;
+				}
+			}
+		}
 
-        /* === PerfectSkinBlock === */
-        .PerfectSkinBlock {
-            margin-bottom: 50px;
+		/* === PerfectSkinBlock === */
+		.PerfectSkinBlock {
+			margin-bottom: 50px;
 
-            @media @pc {
-                padding: 0 40px;
-            }
+			@media @pc {
+				padding: 0 40px;
+			}
 
-            /* === titleBlock === */
-            .titleBlock {
-                text-align: center;
+			/* === titleBlock === */
+			.titleBlock {
+				text-align: center;
 
-                .title {
-                    font-size: @base-fontsize * 2;
-                    font-weight: bold;
-                }
+				.title {
+					font-size: @base-fontsize * 2;
+					font-weight: bold;
+				}
 
-                .description {
-                    font-size: @base-fontsize * 1.4;
+				.description {
+					font-size: @base-fontsize * 1.4;
 
-                    @media @sp {
-                        text-align: left;
-                        font-size: @base-fontsize * 1.2;
-                    }
-                }
-            }
+					@media @sp {
+						text-align: left;
+						font-size: @base-fontsize * 1.2;
+					}
+				}
+			}
 
-            /* === contents === */
-            .contents {
+			/* === contents === */
+			.contents {
 
-                /* === content === */
-                .content {
-                    padding: 20px;
+				/* === content === */
+				.content {
+					padding: 20px;
 
-                    /* === contentImage === */
-                    .contentImage {
-                        margin-bottom: 20px;
+					/* === contentImage === */
+					.contentImage {
+						margin-bottom: 20px;
 
-                        img {
-                            display: inline-block;
-                            max-width: 80%;
-                            position: relative;
-                            left: 50%;
-                            transform: translate(-50%, 0);
-                        }
-                    }
+						img {
+							display: inline-block;
+							max-width: 80%;
+							position: relative;
+							left: 50%;
+							transform: translate(-50%, 0);
+						}
+					}
 
-                    /* === contentDescription === */
-                    .contentDescription {
-                        font-size: @base-fontsize * 1.2;
-                        margin-bottom: 30px;
-                    }
+					/* === contentDescription === */
+					.contentDescription {
+						font-size: @base-fontsize * 1.2;
+						margin-bottom: 30px;
+					}
 
-                    /* === contentLink === */
-                    .contentLink {
-                        text-align: right;
+					/* === contentLink === */
+					.contentLink {
+						text-align: right;
 
-                        a {
-                            color: @link-color;
-                        }
-                    }
-                }
-            }
-        }
-    }
+						a {
+							color: @link-color;
+						}
+					}
+				}
+			}
+		}
+	}
 }

@@ -1,50 +1,52 @@
 @import "../../common.less";
+@import "../../footer.less";
 
 main {
-    min-height: 80vh;
-    font-size: @base-fontsize;
-    padding: 0 10%;
-    max-width: 1200px;
-    margin: auto;
+	min-height: 80vh;
+	font-size: @base-fontsize;
+	padding: 0 10%;
+	max-width: 1200px;
+	margin: auto;
 
-    /* === headTitle === */
-    .headTitle {
-        margin: 10vh 0 5vh;
-        display: flex;
-        border-bottom: solid 1px gray;
-        padding-bottom: 10px;
-        font-size: @base-fontsize * 1.5;
-        font-weight: bold;
+	/* === headTitle === */
+	.headTitle {
+		margin: 10vh 0 5vh;
+		display: flex;
+		border-bottom: solid 1px gray;
+		padding-bottom: 10px;
+		font-size: @base-fontsize * 1.5;
+		font-weight: bold;
 
-        .icon {
-            width: auto;
-            height: 100%;
-        }
+		.icon {
+			width: auto;
+			height: 100%;
+		}
 
-        .message {
-            text-align: center;
-            flex: 1;
-        }
-    }
+		.message {
+			text-align: center;
+			flex: 1;
+		}
+	}
 
-    /* === detailMessage === */
-    .detailMessage {
-        margin: 10vh 0;
+	/* === detailMessage === */
+	.detailMessage {
+		margin: 10vh 0;
 
-        .message {
-            display: inline-block;
-            position: relative;
-            left: 50%;
-            transform: translate(-50%, 0);
-            font-size: @base-fontsize * 1.2;
-        }
-    }
+		.message {
+			display: inline-block;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+			font-size: @base-fontsize * 1.2;
+		}
+	}
 
-    /* === returnTop === */
-    .returnTop {
-        text-align: center;
-        a {
-            color: #0000ff;
-        }
-    }
+	/* === returnTop === */
+	.returnTop {
+		text-align: center;
+
+		a {
+			color: #0000ff;
+		}
+	}
 }
