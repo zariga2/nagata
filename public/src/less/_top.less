@@ -2,9 +2,12 @@
 @import "./header.less";
 @import "./footer.less";
 
-
 body {
-	font-size: @base-fontsize;
+    font-size: @base-fontsize;
+
+    main {
+        padding: 0 30px;
+    }
 }
 
 h1,
@@ -14,215 +17,213 @@ h4,
 h5,
 h6,
 p {
-	line-height: 200%;
-	font-size: @base-fontsize;
+    line-height: 200%;
+    font-size: @base-fontsize;
 }
 
 header.masthead {
-	padding-top: 4rem;
-	padding-bottom: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
-	font-size: @base-fontsize;
+    font-size: @base-fontsize;
 
-	header.masthead {
-		padding-top: 7rem;
-		padding-bottom: 7rem;
-	}
+    header.masthead {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
 
-	header.masthead h1 {
-		font-size: @base-fontsize;
-	}
+    header.masthead h1 {
+        font-size: @base-fontsize;
+    }
 
-	header.masthead h5 strong {
-		font-size: @base-fontsize;
-	}
+    header.masthead h5 strong {
+        font-size: @base-fontsize;
+    }
 }
 
 .no-gutters {
-	padding-top: 5rem;
+    padding-top: 5rem;
 }
 
 .showcase {
-	padding-top: 7rem;
+    padding-top: 7rem;
 
-	.lead {
-		font-size: @base-fontsize;
-	}
+    .lead {
+        font-size: @base-fontsize;
+    }
 
-	.showcase-tittle {
-		text-decoration: underline;
-		color: #e4b454;
-	}
+    .showcase-tittle {
+        text-decoration: underline;
+        color: #e4b454;
+    }
 
-	.showcase-img {
-		min-height: 30rem;
-		background-size: cover;
-		background-position: center center;
-		margin: auto;
-	}
+    .showcase-img {
+        min-height: 30rem;
+        background-size: cover;
+        background-position: center center;
+        margin: auto;
+    }
 
-	.showcase-text {
-		padding: 3rem;
+    .showcase-text {
+        padding: 3rem;
 
-		.link-text {
-			font-size: @base-fontsize;
-		}
-	}
+        .link-text {
+            font-size: @base-fontsize;
+        }
+    }
 
-	@media (min-width: 768px) {
-		.showcase-text {
-			padding: 7rem;
-		}
-	}
+    @media (min-width: 768px) {
+        .showcase-text {
+            padding: 7rem;
+        }
+    }
 }
 
 .testimonials {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
-	.testimonials-text {
-		text-align: left;
-		font-size: @base-fontsize;
-	}
+    .testimonials-text {
+        text-align: left;
+        font-size: @base-fontsize;
+    }
 }
 
 /* === 追加スタイル === */
 
 main {
-	max-width: 1000px;
-	margin: auto;
+    max-width: 1000px;
+    margin: auto;
 
-	/* === mainTitle === */
-	.mainTitleBlock {
-		.mainTitle {
-			font-size: @base-fontsize * 2.5;
-		}
+    /* === mainTitle === */
+    .mainTitleBlock {
+        .mainTitle {
+            font-size: @base-fontsize * 2.5;
+        }
 
-		.subTitle {
-			font-size: @base-fontsize * 1.1;
-		}
-	}
+        .subTitle {
+            font-size: @base-fontsize * 1.1;
+        }
+    }
 
-	/* === youtubeBlock === */
-	.youtubeBlock {
-		margin-bottom: 10vh;
-	}
+    /* === youtubeBlock === */
+    .youtubeBlock {
+        margin-bottom: 10vh;
+    }
 
-	/* === contents === */
-	.contents {
+    /* === contents === */
+    .contents {
+        /* === content === */
+        .content {
+            margin: 15vh auto;
 
-		/* === content === */
-		.content {
-			margin: 15vh auto;
+            /* === leftSide === */
+            /* === rightSide === */
+            .leftSide,
+            .rightSide {
+                /* === detail === */
+                .detail {
+                    .topTitle {
+                        color: #e4b454;
+                        font-size: @base-fontsize * 1.5;
 
-			/* === leftSide === */
-			/* === rightSide === */
-			.leftSide,
-			.rightSide {
+                        .underLine {
+                            text-decoration: underline;
+                        }
+                    }
 
-				/* === detail === */
-				.detail {
-					.topTitle {
-						color: #e4b454;
-						font-size: @base-fontsize * 1.5;
+                    .subTitle {
+                        font-size: @base-fontsize * 1.8;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
 
-						.underLine {
-							text-decoration: underline;
-						}
-					}
+                    .description {
+                    }
 
-					.subTitle {
-						font-size: @base-fontsize * 1.8;
-						font-weight: bold;
-						margin-bottom: 15px;
-					}
+                    .link {
+                        text-align: right;
+                        color: @link-color;
+                    }
+                }
 
-					.description {}
+                /* === img === */
+                .image {
+                    padding: 0 50px;
 
-					.link {
-						text-align: right;
-						color: @link-color;
-					}
-				}
+                    img {
+                        display: inline-block;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
 
-				/* === img === */
-				.image {
-					padding: 0 50px;
+    /* === PerfectSkinBlock === */
+    .PerfectSkinBlock {
+        margin-bottom: 50px;
 
-					img {
-						display: inline-block;
-						width: 100%;
-						object-fit: cover;
-					}
-				}
-			}
-		}
-	}
+        @media @pc {
+            padding: 0 40px;
+        }
 
-	/* === PerfectSkinBlock === */
-	.PerfectSkinBlock {
-		margin-bottom: 50px;
+        /* === titleBlock === */
+        .titleBlock {
+            text-align: center;
 
-		@media @pc {
-			padding: 0 40px;
-		}
+            .title {
+                font-size: @base-fontsize * 2;
+                font-weight: bold;
+            }
 
-		/* === titleBlock === */
-		.titleBlock {
-			text-align: center;
+            .description {
+                font-size: @base-fontsize * 1.4;
+            }
+        }
 
-			.title {
-				font-size: @base-fontsize * 2;
-				font-weight: bold;
-			}
+        /* === contents === */
+        .contents {
+            /* === content === */
+            .content {
+                padding: 20px;
 
-			.description {
-				font-size: @base-fontsize * 1.4;
-			}
-		}
+                /* === contentImage === */
+                .contentImage {
+                    margin-bottom: 20px;
 
-		/* === contents === */
-		.contents {
+                    img {
+                        display: inline-block;
+                        max-width: 80%;
+                        position: relative;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                }
 
-			/* === content === */
-			.content {
-				padding: 20px;
+                /* === contentDescription === */
+                .contentDescription {
+                    font-size: @base-fontsize * 1.2;
+                    margin-bottom: 30px;
+                }
 
-				/* === contentImage === */
-				.contentImage {
-					margin-bottom: 20px;
+                /* === contentLink === */
+                .contentLink {
+                    text-align: right;
 
-					img {
-						display: inline-block;
-						max-width: 80%;
-						position: relative;
-						left: 50%;
-						transform: translate(-50%, 0);
-					}
-				}
+                    a {
+                        color: #0000ff;
+                    }
+                }
+            }
+        }
+    }
 
-				/* === contentDescription === */
-				.contentDescription {
-					font-size: @base-fontsize * 1.2;
-					margin-bottom: 30px;
-				}
-
-				/* === contentLink === */
-				.contentLink {
-					text-align: right;
-
-					a {
-						color: #0000ff;
-					}
-				}
-			}
-		}
-	}
-
-	/* === border === */
-	.border {
-		margin: 10vh 0;
-	}
+    /* === border === */
+    .border {
+        margin: 10vh 0;
+    }
 }
