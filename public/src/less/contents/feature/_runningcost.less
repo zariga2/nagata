@@ -246,10 +246,19 @@ main {
                 .title {
                     font-size: @base-fontsize * 3;
                     font-weight: bold;
+
+                    @media @sp {
+                        font-size: @base-fontsize*2;
+                    }
                 }
 
                 .description {
                     font-size: @base-fontsize * 1.4;
+
+                    @media @sp {
+                        text-align: left;
+                        font-size: @base-fontsize * 1.2;
+                    }
                 }
             }
 
