@@ -101,6 +101,10 @@ main {
     .mainTitleBlock {
         .mainTitle {
             font-size: @base-fontsize * 3.5;
+
+            @media @sp {
+                font-size: @base-fontsize * 2.3;
+            }
         }
 
         .subTitle {
@@ -132,6 +136,10 @@ main {
                         font-size: @base-fontsize * 2.0;
                         font-weight: bold;
 
+                        @media @sp {
+                            font-size: @base-fontsize * 1.5;
+                        }
+
                         .underLine {
                             text-decoration: underline;
                         }
@@ -141,10 +149,19 @@ main {
                         font-size: @base-fontsize * 2.6;
                         font-weight: bold;
                         margin-bottom: 15px;
+
+                        @media @sp {
+                            font-size: @base-fontsize * 1.4;
+                        }
                     }
 
                     .description {
                         font-size: @base-fontsize*1.2;
+
+                        @media @sp {
+                            font-size: @base-fontsize;
+                        }
+
                     }
 
                     .link {
@@ -182,10 +199,19 @@ main {
             .title {
                 font-size: @base-fontsize * 3.0;
                 font-weight: bold;
+                margin-bottom: 30px;
+
+                @media @sp {
+                    font-size: @base-fontsize * 1.7;
+                }
             }
 
             .description {
                 font-size: @base-fontsize * 1.4;
+
+                @media @sp {
+                    font-size: @base-fontsize;
+                }
             }
         }
 
@@ -212,7 +238,7 @@ main {
 
                 /* === contentDescription === */
                 .contentDescription {
-                    font-size: @base-fontsize * 1.2;
+                    font-size: @base-fontsize;
                     margin-bottom: 30px;
                 }
 
