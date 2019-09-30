@@ -76,6 +76,10 @@ main {
                     font-size: @base-fontsize * 2.3;
                     font-weight: bold;
 
+                    @media @sp {
+                        font-size: @base-fontsize * 1.7;
+                    }
+
                     .yellow {
                         .under {
                             text-decoration: underline;
@@ -88,6 +92,10 @@ main {
                 .description {
                     font-size: @base-fontsize*1.2;
                     margin: 20px 0;
+
+                    @media @sp {
+                        font-size: @base-fontsize;
+                    }
 
                     .attention {
                         font-size: @base-fontsize;
@@ -125,11 +133,19 @@ main {
                 font-size: @base-fontsize * 2.3;
                 font-weight: bold;
                 margin-bottom: 5px;
+
+                @media @sp {
+                    font-size: @base-fontsize * 1.7;
+                }
             }
 
             .description {
                 margin-bottom: 10px;
                 font-size: @base-fontsize*1.2;
+
+                @media @sp {
+                    font-size: @base-fontsize;
+                }
 
                 .sm {
                     font-size: @base-fontsize * 0.8;
