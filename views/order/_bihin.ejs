@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Document</title>
-        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-        <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
-        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- === less === -->
-        <link rel="stylesheet/less" href="/src/less/order/_bihin.less" />
-        <script src="/lib/less/less.min.js"></script>
-    </head>
-    <body>
-        <!-- === header === -->
-        <%- include('../header') %>
+    <!-- === less === -->
+    <link rel="stylesheet/less" href="/src/less/order/_bihin.less" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+  </head>
+  <body>
+    <!-- === header === -->
+    <%- include('../header') %>
 
-        <main>
-            <!-- === main1FirstHeader === -->
-            <%- include('./main1FirstHeader.ejs') %>
+    <main>
+      <!-- === main1FirstHeader === -->
+      <%- include('./main1FirstHeader.ejs') %>
 
-            <!-- === main3ThirdHeader === -->
-            <%- include('./main3ThirdHeader.ejs') %>
+      <!-- === main3ThirdHeader === -->
+      <%- include('./main3ThirdHeader.ejs') %>
 
-            <!-- === mainContents === -->
-            <div class="mainContents container">
-                <!-- === main4FourthHeader === -->
-                <%- include('./main4FourthHeader.ejs') %>
+      <!-- === mainContents === -->
+      <div class="mainContents container">
+        <!-- === main4FourthHeader === -->
+        <%- include('./main4FourthHeader.ejs') %>
 
-                <!-- === productContent === -->
-                <div class="productContent row">
-                    <!-- === contentImage === -->
-                    <div class="contentImage col-sm-5">
-                        <img
-                            src="/src/images/order/bihin/pic1.png"
-                            alt="product"
-                        />
-                    </div>
-                    <!-- === contentDetail === -->
-                    <div class="contentDetail col-sm-7">
-                        <div class="title">ゴースト・ボンド</div>
-                        <div class="price">価格 2,380円（税込）</div>
-                        <div class="description">
-                            <div class="title">
-                                【概要】
-                            </div>
-                            ウルトラホールドのお試しサイズです。<br />
-                            キャップに塗布用ブラシが付いています。<br /><br />
-                            ウルトラホールドは名前の通り強力な粘着力を誇り、現在もっとも強力な接着剤といわれています。
-                        </div>
-                        <div class="HowTo">
-                            <div class="title">
-                                【使い方】
-                            </div>
-                            接着面にできるだけ薄く均一に塗布し、完全に乾燥してから圧着します。粘性が高いので
-                            重ね塗りはせずに１回塗りでの使用をお勧めします。
-                        </div>
-                        <div class="toCart">
-                            <select name="" id="">
-                                <option value="1">1</option>
-                            </select>
-                            <button>買い物かごに入れる</button>
-                        </div>
-                    </div>
-                </div>
+        <!-- === productContent === -->
+        <div class="productContent row">
+          <!-- === contentImage === -->
+          <div class="contentImage col-sm-5">
+            <img src="/src/images/order/bihin/pic1.png" alt="product" />
+          </div>
+          <!-- === contentDetail === -->
+          <div class="contentDetail col-sm-7">
+            <div class="title">ゴースト・ボンド</div>
+            <div class="price">価格 2,380円（税込）</div>
+            <div class="description">
+              <div class="title">
+                【概要】
+              </div>
+              ウルトラホールドのお試しサイズです。<br />
+              キャップに塗布用ブラシが付いています。<br /><br />
+              ウルトラホールドは名前の通り強力な粘着力を誇り、現在もっとも強力な接着剤といわれています。
             </div>
-        </main>
+            <div class="HowTo">
+              <div class="title">
+                【使い方】
+              </div>
+              接着面にできるだけ薄く均一に塗布し、完全に乾燥してから圧着します。粘性が高いので
+              重ね塗りはせずに１回塗りでの使用をお勧めします。
+            </div>
+            <div class="toCart">
+              <select name="" id="">
+                <option value="1">1</option>
+              </select>
+              <button>買い物かごに入れる</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-        <!-- === footer === -->
-        <%- include('../footer') %>
-    </body>
+    <!-- === footer === -->
+    <%- include('../footer') %>
+  </body>
 </html>
