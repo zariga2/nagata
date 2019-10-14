@@ -24,10 +24,10 @@
         <main>
             <!-- head container -->
             <!-- === mainTitle === -->
-            <header class="masthead text-black text-center mainTitleBlock">
+            <div class="masthead text-black text-center mainTitleBlock">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12 mx-auto">
+                        <div class="col-xl-12 mx-auto sa sa_up" id="top">
                             <!-- === mainTitle === -->
                             <h1 class="mb-5 mainTitle">
                                 <strong>
@@ -38,7 +38,7 @@
                                 >
                             </h1>
                             <!-- === subTitle === -->
-                            <h5 class="subTitle">
+                            <h5 class="subTitle ">
                                 薄さわずか<strong>数<i>μ</i>の極薄ベース</strong>と<strong>最高品質</strong>の<strong>天然毛髪</strong>で、本来の毛髪と変わらない体験を得ることができます。<br />
                                 <strong>Perfect Skin</strong
                                 >が極限までこだわった自然な生え際により、<strong>どんなヘアスタイル</strong>も可能に。<br />
@@ -48,11 +48,11 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
 
             <!-- === youtube埋め込み === -->
             <!-- === container === -->
-            <div class="container youtubeBlock">
+            <div class="container youtubeBlock sa sa_up" id="youtube">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe
@@ -72,7 +72,7 @@
             <!-- === contents === -->
             <div class="contents container">
                 <!-- === content === -->
-                <div class="content row">
+                <div class="content row sa sa_up">
                     <!-- === leftSide === -->
                     <div class="leftSide col-lg-6">
                         <!-- === detail === -->
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <!-- === content === -->
-                <div class="content row">
+                <div class="content row sa sa_up">
                     <!-- === rightSide === -->
                     <div class="leftSide col-lg-6">
                         <div class="image">
@@ -223,5 +223,7 @@
 
         <!-- === footer === -->
         <%- include('./footer') %>
+
+        <script src="/src/modules/fadeAction.js"></script>
     </body>
 </html>

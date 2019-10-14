@@ -4,254 +4,280 @@
 @import "./main1FirstHeader.less";
 
 main {
-    font-size: @base-fontsize;
-    font-family: @base-fontfami;
-    min-height: 80vh;
-    max-width: 1200px;
-    margin: auto;
+	font-size: @base-fontsize;
+	font-family: @base-fontfami;
+	min-height: 80vh;
+	max-width: 1200px;
+	margin: auto;
 
-    /* === mainTitleBlock === */
-    .mainTitleBlock {
-        text-align: center;
-        font-weight: bold;
+	/* === mainTitleBlock === */
+	.mainTitleBlock {
+		text-align: center;
+		font-weight: bold;
+		height: 80vh;
 
-        .mainTitle {
-            font-size: @base-fontsize * 4.5;
-            line-height: 1;
+		//	title
+		.title {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 
-            @media @sp {
-                font-size: @base-fontsize * 2;
-            }
-        }
+			//	mainTitle
+			.mainTitle {
+				font-size: @base-fontsize * 4.5;
+				line-height: 1;
 
-        /* === subTitle === */
-        .subTitle {
-            font-size: @base-fontsize * 3.5;
+				@media @sp {
+					font-size: @base-fontsize * 2;
+				}
 
-            @media @sp {
-                font-size: @base-fontsize * 1.4;
-            }
-        }
-    }
+			}
 
-    /* === mainImage === */
-    .mainImage {
-        margin: 60px;
+			/* === subTitle === */
+			.subTitle {
+				font-size: @base-fontsize * 3.5;
 
-        img {
-            display: inline-block;
-            width: 100%;
-            object-fit: cover;
+				@media @sp {
+					font-size: @base-fontsize * 1.4;
+				}
+			}
+		}
+	}
 
-        }
-    }
+	/* === mainImage === */
+	.mainImage {
+		margin: 60px;
 
-    /* === secondTitleBlock === */
-    .secondTitleBlock {
-        font-size: @base-fontsize * 2.2;
-        font-weight: bold;
-        text-align: center;
-        margin: 80px 0;
+		img {
+			display: inline-block;
+			width: 100%;
+			object-fit: cover;
 
-        @media @sp {
-            font-size: @base-fontsize * 1.1;
-        }
-    }
+		}
+	}
 
-    /* === contents === */
-    .contents {
-        margin: 50px 0;
+	/* === secondTitleBlock === */
+	.secondTitleBlock {
+		font-size: @base-fontsize * 2.2;
+		font-weight: bold;
+		text-align: center;
+		margin: 80px 0;
 
-        @media @pc {
-            padding: 0 70px;
-        }
+		@media @sp {
+			font-size: @base-fontsize * 1.1;
+		}
+	}
 
-        /* === content-style1 === */
-        .content-style1 {
-            margin-bottom: 20vh;
+	/* === contents === */
+	.contents {
+		margin: 50px 0;
 
-            /* === detail === */
-            .detail {
-                .title {
-                    font-size: @base-fontsize * 2.3;
-                    font-weight: bold;
+		@media @pc {
+			padding: 0 70px;
+		}
 
-                    @media @sp {
-                        font-size: @base-fontsize * 1.7;
-                    }
+		/* === content-style1 === */
+		.content-style1 {
+			margin-bottom: 20vh;
 
-                    .yellow {
-                        .under {
-                            text-decoration: underline;
-                        }
+			/* === detail === */
+			.detail {
+				.title {
+					font-size: @base-fontsize * 2.3;
+					font-weight: bold;
 
-                        color: rgb(216, 142, 6);
-                    }
-                }
+					@media @sp {
+						font-size: @base-fontsize * 1.7;
+					}
 
-                .description {
-                    font-size: @base-fontsize*1.2;
-                    margin: 20px 0;
+					.yellow {
+						.under {
+							text-decoration: underline;
+						}
 
-                    @media @sp {
-                        font-size: @base-fontsize;
-                    }
+						color: rgb(216, 142, 6);
+					}
+				}
 
-                    .attention {
-                        font-size: @base-fontsize;
-                    }
-                }
+				.description {
+					font-size: @base-fontsize*1.2;
+					margin: 20px 0;
 
-                .link {
-                    text-align: right;
+					@media @sp {
+						font-size: @base-fontsize;
+					}
 
-                    a {
-                        color: @link-color;
-                        padding: 0 30px;
+					.attention {
+						font-size: @base-fontsize;
+					}
+				}
 
-                        @media @sp {
-                            padding: 0 20px;
-                        }
-                    }
-                }
-            }
+				.link {
+					text-align: right;
 
-            /* === image === */
-            .image {
-                img {
-                    display: inline-block;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
+					a {
+						color: @link-color;
+						padding: 0 30px;
 
-        .content-style2 {
-            margin-bottom: 15vh;
+						@media @sp {
+							padding: 0 20px;
+						}
+					}
+				}
+			}
 
-            .title {
-                font-size: @base-fontsize * 2.3;
-                font-weight: bold;
-                margin-bottom: 5px;
+			/* === image === */
+			.image {
+				img {
+					display: inline-block;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
 
-                @media @sp {
-                    font-size: @base-fontsize * 1.7;
-                }
-            }
+		.content-style2 {
+			margin-bottom: 15vh;
 
-            .description {
-                margin-bottom: 10px;
-                font-size: @base-fontsize*1.2;
+			.title {
+				font-size: @base-fontsize * 2.3;
+				font-weight: bold;
+				margin-bottom: 5px;
 
-                @media @sp {
-                    font-size: @base-fontsize;
-                }
+				@media @sp {
+					font-size: @base-fontsize * 1.7;
+				}
+			}
 
-                .sm {
-                    font-size: @base-fontsize * 0.8;
-                }
-            }
+			.description {
+				margin-bottom: 10px;
+				font-size: @base-fontsize*1.2;
 
-            .image {
-                @media @pc {
-                    padding: 4vw 15vw;
-                }
+				@media @sp {
+					font-size: @base-fontsize;
+				}
 
-                img {
-                    display: inline-block;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
+				.sm {
+					font-size: @base-fontsize * 0.8;
+				}
+			}
 
-    /* === mainVideo === */
-    .mainVideo {
-        margin-bottom: 15vh;
+			.image {
+				@media @pc {
+					padding: 4vw 15vw;
+				}
 
-        @media @pc {
-            padding: 0 10vw;
-        }
+				img {
+					display: inline-block;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
 
-        img {
-            display: inline-block;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
+	/* === mainVideo === */
+	.mainVideo {
+		margin-bottom: 15vh;
 
-    /* === PerfectSkinBlock === */
-    .PerfectSkinBlock {
-        margin-bottom: 50px;
+		@media @pc {
+			padding: 0 10vw;
+		}
 
-        @media @pc {
-            padding: 0 40px;
-        }
+		img {
+			display: inline-block;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
 
-        /* === titleBlock === */
-        .titleBlock {
-            text-align: center;
+	/* === PerfectSkinBlock === */
+	.PerfectSkinBlock {
+		margin-bottom: 50px;
 
-            .title {
-                font-size: @base-fontsize * 3.0;
-                font-weight: bold;
-                margin-bottom: 30px;
+		@media @pc {
+			padding: 0 40px;
+		}
 
-                @media @sp {
-                    font-size: @base-fontsize * 1.7;
-                }
-            }
+		/* === titleBlock === */
+		.titleBlock {
+			text-align: center;
 
-            .description {
-                font-size: @base-fontsize * 1.4;
+			.title {
+				font-size: @base-fontsize * 3.0;
+				font-weight: bold;
+				margin-bottom: 30px;
 
-                @media @sp {
-                    font-size: @base-fontsize;
-                }
-            }
-        }
+				@media @sp {
+					font-size: @base-fontsize * 1.7;
+				}
+			}
 
-        /* === contents === */
-        .contents {
+			.description {
+				font-size: @base-fontsize * 1.4;
 
-            /* === content === */
-            .content {
-                padding: 20px;
+				@media @sp {
+					font-size: @base-fontsize;
+				}
+			}
+		}
 
-                /* === contentImage === */
-                .contentImage {
-                    margin-bottom: 20px;
+		/* === contents === */
+		.contents {
 
-                    img {
-                        display: inline-block;
-                        max-width: 80%;
-                        position: relative;
-                        left: 50%;
-                        transform: translate(-50%, 0);
-                    }
-                }
+			/* === content === */
+			.content {
+				padding: 20px;
 
-                /* === contentDescription === */
-                .contentDescription {
-                    font-size: @base-fontsize * 1.2;
-                    margin-bottom: 30px;
-                }
+				/* === contentImage === */
+				.contentImage {
+					margin-bottom: 20px;
 
-                /* === contentLink === */
-                .contentLink {
-                    text-align: right;
+					img {
+						display: inline-block;
+						max-width: 80%;
+						position: relative;
+						left: 50%;
+						transform: translate(-50%, 0);
+					}
+				}
 
-                    a {
-                        color: #0000ff;
-                    }
-                }
-            }
-        }
-    }
+				/* === contentDescription === */
+				.contentDescription {
+					font-size: @base-fontsize * 1.2;
+					margin-bottom: 30px;
+				}
 
-    /* === border === */
-    .border {
-        margin-bottom: 15vh;
-    }
+				/* === contentLink === */
+				.contentLink {
+					text-align: right;
+
+					a {
+						color: #0000ff;
+					}
+				}
+			}
+		}
+	}
+
+	/* === border === */
+	.border {
+		margin-bottom: 15vh;
+	}
+}
+
+
+.sa {
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+.sa.show {
+	opacity: 1;
+	transform: none;
+}
+
+.sa_up {
+	transform: translate(0, 50px);
 }
